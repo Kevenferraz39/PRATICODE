@@ -1,0 +1,678 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;display=swap');
+/*fim-imports*/
+
+/* var-color*/ 
+:root{
+--menu-text:rgb(170, 17, 17);
+--box-shadow-menu:rgb(170, 17, 17);
+--footer-bacground:rgb(170, 17, 17);
+--css:rgb(41, 190, 240);
+--html:rgb(240, 101, 41);
+--nav-background:#1d1f20;
+--lista-perguntas:#262626;
+--body-bacground: #161616;
+--font-color:white;
+--font-color2:rgb(3, 3, 3);
+--font-color3:rgb(143, 140, 140);
+--font-color4:rgb(10, 190, 136);
+} 
+/*fim-var-color*/
+
+#focus{
+    color:var(--menu-text); 
+    list-style: none;
+    display: inline-flex;
+    align-items: flex-end;
+    text-align: end;
+    position:relative;
+    
+    padding: 0px;
+    font-size: 20px;
+  }
+/*botao projeto dropdown*/
+.dropdown {
+    float: right;
+    overflow: hidden;
+    margin-right: 5px;
+  }
+  
+  .dropdown .dropbtn{
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 5px;
+    background-color: rgba(0, 0, 255, 0);
+    font-family: inherit;
+    margin: 0;
+    font-weight:bold;
+  }
+  
+  .dropdown:hover .dropbtn, .dropbtn:focus {
+   color:rgb(170, 17, 17);
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 65px;
+    background-color:var(--nav-background);
+    min-width: 200px;
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    float: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .dropdown-content a:hover {
+    color:rgb(170, 17, 17);
+  }
+  
+  .show{
+    margin-top:9px;
+    box-shadow: none;
+    display: block;
+  }
+/*fim-botao projeto dropdown*/
+.exercicios-html{
+border-style: none;
+width: 250px;
+height: 100px;
+border-radius: 10px;
+padding: 10px;
+background-color: var(--lista-perguntas);
+box-shadow: 0 0 10px 1px #0a0a0a;
+margin-left:-400px;
+}
+.exercicios-html h3{
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    color: var(--font-color);
+    font-weight: 100;
+}
+.exercicios-html h3:hover{
+    text-align: center;
+    justify-content: center;
+    color: var(--html);
+    padding: 5px;
+    font-weight: 200;
+}
+.progrecbar-html{
+    width: 80%;
+    height: 2px;
+    border-style: solid;
+    border-color: var(--html); border-width: 2px;
+    border-radius: 2px;
+    background-color: var(--html);
+    margin-top: 20px;
+}
+.exercicios-css{
+    border-style: none;
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--lista-perguntas);
+    box-shadow: 0 0 10px 1px #0a0a0a;
+    margin-left: 200px;
+    margin-top: -100px;
+    }
+    .exercicios-css h3{
+        text-align: center;
+        justify-content: center;
+        padding: 5px;
+        color: var(--font-color);
+        font-weight: 100;
+    }
+    .exercicios-css h3:hover{
+        text-align: center;
+        justify-content: center;
+        color: var(--css);
+        padding: 5px;
+        font-weight: 200;
+    }
+    .progrecbar-css{
+        width: 80%;
+        height: 2px;
+        border-style: solid;
+        border-color: var(--css); border-width: 2px;
+        border-radius: 2px;
+        background-color: var(--css);
+        margin-top: 20px;
+    }
+    footer{
+        top: 300px;
+    }
+    /*--------------------------------------------------------FORMATAÇÃO DE RESPONSIVIDADE WEB----------------------------------------------------------------------------------*/
+    @media (max-width:1500px){
+      .exercicios-html{
+        border-style: none;
+        width: 250px;
+        height: 100px;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: var(--lista-perguntas);
+        box-shadow: 0 0 10px 2px var(--html);
+        margin-left:-310px;
+        margin-top:0px;
+        }
+        .exercicios-html h3{
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+            color: var(--font-color);
+            font-weight: 100;
+        }
+        .exercicios-html h3:hover{
+            text-align: center;
+            justify-content: center;
+            color: var(--html);
+            padding: 5px;
+            font-weight: 200;
+        }
+        .progrecbar-html{
+            width: 80%;
+            height: 2px;
+            border-style: solid;
+            border-color: var(--html); border-width: 2px;
+            border-radius: 2px;
+            background-color: var(--html);
+            margin-top: 20px;
+        }
+        .exercicios-css{
+            border-style: none;
+            width: 250px;
+            height: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: var(--lista-perguntas);
+            box-shadow: 0 0 10px 2px var(--css);
+            margin-left: 300px;
+            margin-top: -100px;
+            }
+            .exercicios-css h3{
+                text-align: center;
+                justify-content: center;
+                padding: 5px;
+                color: var(--font-color);
+                font-weight: 100;
+            }
+            .exercicios-css h3:hover{
+                text-align: center;
+                justify-content: center;
+                color: var(--css);
+                padding: 5px;
+                font-weight: 200;
+            }
+            .progrecbar-css{
+                width: 80%;
+                height: 2px;
+                border-style: solid;
+                border-color: var(--css); border-width: 2px;
+                border-radius: 2px;
+                background-color: var(--css);
+                margin-top: 20px;
+            }
+    }
+  /*--------------------------------------------*/
+    @media (max-width:1100px){
+      .exercicios-html{
+        border-style: none;
+        width: 250px;
+        height: 100px;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: var(--lista-perguntas);
+        box-shadow: 0 0 10px 2px var(--html);
+        margin-left:-310px;
+        margin-top:0px;
+        }
+        .exercicios-html h3{
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+            color: var(--font-color);
+            font-weight: 100;
+        }
+        .exercicios-html h3:hover{
+            text-align: center;
+            justify-content: center;
+            color: var(--html);
+            padding: 5px;
+            font-weight: 200;
+        }
+        .progrecbar-html{
+            width: 80%;
+            height: 2px;
+            border-style: solid;
+            border-color: var(--html); border-width: 2px;
+            border-radius: 2px;
+            background-color: var(--html);
+            margin-top: 20px;
+        }
+        .exercicios-css{
+            border-style: none;
+            width: 250px;
+            height: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: var(--lista-perguntas);
+            box-shadow: 0 0 10px 2px var(--css);
+            margin-left: 300px;
+            margin-top: -100px;
+            }
+            .exercicios-css h3{
+                text-align: center;
+                justify-content: center;
+                padding: 5px;
+                color: var(--font-color);
+                font-weight: 100;
+            }
+            .exercicios-css h3:hover{
+                text-align: center;
+                justify-content: center;
+                color: var(--css);
+                padding: 5px;
+                font-weight: 200;
+            }
+            .progrecbar-css{
+                width: 80%;
+                height: 2px;
+                border-style: solid;
+                border-color: var(--css); border-width: 2px;
+                border-radius: 2px;
+                background-color: var(--css);
+                margin-top: 20px;
+            }
+    }
+  /*--------------------------------------------*/
+    @media (max-width:950px){
+      .exercicios-html{
+        border-style: none;
+        width: 250px;
+        height: 100px;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: var(--lista-perguntas);
+        box-shadow: 0 0 10px 2px var(--html);
+        margin-left:-310px;
+        margin-top:0px;
+        }
+        .exercicios-html h3{
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+            color: var(--font-color);
+            font-weight: 100;
+        }
+        .exercicios-html h3:hover{
+            text-align: center;
+            justify-content: center;
+            color: var(--html);
+            padding: 5px;
+            font-weight: 200;
+        }
+        .progrecbar-html{
+            width: 80%;
+            height: 2px;
+            border-style: solid;
+            border-color: var(--html); border-width: 2px;
+            border-radius: 2px;
+            background-color: var(--html);
+            margin-top: 20px;
+        }
+        .exercicios-css{
+            border-style: none;
+            width: 250px;
+            height: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: var(--lista-perguntas);
+            box-shadow: 0 0 10px 2px var(--css);
+            margin-left: 300px;
+            margin-top: -100px;
+            }
+            .exercicios-css h3{
+                text-align: center;
+                justify-content: center;
+                padding: 5px;
+                color: var(--font-color);
+                font-weight: 100;
+            }
+            .exercicios-css h3:hover{
+                text-align: center;
+                justify-content: center;
+                color: var(--css);
+                padding: 5px;
+                font-weight: 200;
+            }
+            .progrecbar-css{
+                width: 80%;
+                height: 2px;
+                border-style: solid;
+                border-color: var(--css); border-width: 2px;
+                border-radius: 2px;
+                background-color: var(--css);
+                margin-top: 20px;
+            }
+    }
+  /*--------------------------------------------*/
+    @media (max-width:880px){
+      .exercicios-html{
+        border-style: none;
+        width: 250px;
+        height: 100px;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: var(--lista-perguntas);
+        box-shadow: 0 0 10px 2px var(--html);
+        margin-left:-310px;
+        margin-top:0px;
+        }
+        .exercicios-html h3{
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+            color: var(--font-color);
+            font-weight: 100;
+        }
+        .exercicios-html h3:hover{
+            text-align: center;
+            justify-content: center;
+            color: var(--html);
+            padding: 5px;
+            font-weight: 200;
+        }
+        .progrecbar-html{
+            width: 80%;
+            height: 2px;
+            border-style: solid;
+            border-color: var(--html); border-width: 2px;
+            border-radius: 2px;
+            background-color: var(--html);
+            margin-top: 20px;
+        }
+        .exercicios-css{
+            border-style: none;
+            width: 250px;
+            height: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: var(--lista-perguntas);
+            box-shadow: 0 0 10px 2px var(--css);
+            margin-left: 300px;
+            margin-top: -100px;
+            }
+            .exercicios-css h3{
+                text-align: center;
+                justify-content: center;
+                padding: 5px;
+                color: var(--font-color);
+                font-weight: 100;
+            }
+            .exercicios-css h3:hover{
+                text-align: center;
+                justify-content: center;
+                color: var(--css);
+                padding: 5px;
+                font-weight: 200;
+            }
+            .progrecbar-css{
+                width: 80%;
+                height: 2px;
+                border-style: solid;
+                border-color: var(--css); border-width: 2px;
+                border-radius: 2px;
+                background-color: var(--css);
+                margin-top: 20px;
+            }
+    }
+  /*--------------------------------------------*/
+    @media (max-width:672px){
+      .exercicios-html{
+        border-style: none;
+        width: 250px;
+        height: 100px;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: var(--lista-perguntas);
+        box-shadow: 0 0 10px 2px var(--html);
+        margin-left:-310px;
+        margin-top:0px;
+        }
+        .exercicios-html h3{
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+            color: var(--font-color);
+            font-weight: 100;
+        }
+        .exercicios-html h3:hover{
+            text-align: center;
+            justify-content: center;
+            color: var(--html);
+            padding: 5px;
+            font-weight: 200;
+        }
+        .progrecbar-html{
+            width: 80%;
+            height: 2px;
+            border-style: solid;
+            border-color: var(--html); border-width: 2px;
+            border-radius: 2px;
+            background-color: var(--html);
+            margin-top: 20px;
+        }
+        .exercicios-css{
+            border-style: none;
+            width: 250px;
+            height: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: var(--lista-perguntas);
+            box-shadow: 0 0 10px 2px var(--css);
+            margin-left: 300px;
+            margin-top: -100px;
+            }
+            .exercicios-css h3{
+                text-align: center;
+                justify-content: center;
+                padding: 5px;
+                color: var(--font-color);
+                font-weight: 100;
+            }
+            .exercicios-css h3:hover{
+                text-align: center;
+                justify-content: center;
+                color: var(--css);
+                padding: 5px;
+                font-weight: 200;
+            }
+            .progrecbar-css{
+                width: 80%;
+                height: 2px;
+                border-style: solid;
+                border-color: var(--css); border-width: 2px;
+                border-radius: 2px;
+                background-color: var(--css);
+                margin-top: 20px;
+            }
+      /* formatacao dos links do menu */
+            .link {
+              align-items:center;  
+              display: flex;
+              justify-content: center;
+              margin-top: 20px;
+              margin-left:10%;
+              margin-right: 16%;
+            }
+    }
+  /*--------------------------------------------*/
+    @media (max-width:604px){
+      .exercicios-html{
+        border-style: none;
+        width: 250px;
+        height: 100px;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: var(--lista-perguntas);
+        box-shadow: 0 0 10px 2px var(--html);
+        margin-left:0px;
+        margin-top: -30px;
+        }
+        .exercicios-html h3{
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+            color: var(--font-color);
+            font-weight: 100;
+        }
+        .exercicios-html h3:hover{
+            text-align: center;
+            justify-content: center;
+            color: var(--html);
+            padding: 5px;
+            font-weight: 200;
+        }
+        .progrecbar-html{
+            width: 80%;
+            height: 2px;
+            border-style: solid;
+            border-color: var(--html); border-width: 2px;
+            border-radius: 2px;
+            background-color: var(--html);
+            margin-top: 20px;
+        }
+        .exercicios-css{
+            border-style: none;
+            width: 250px;
+            height: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: var(--lista-perguntas);
+            box-shadow: 0 0 10px 2px var(--css);
+            margin-left: 0px;
+            margin-top: 60px;
+            }
+            .exercicios-css h3{
+                text-align: center;
+                justify-content: center;
+                padding: 5px;
+                color: var(--font-color);
+                font-weight: 100;
+            }
+            .exercicios-css h3:hover{
+                text-align: center;
+                justify-content: center;
+                color: var(--css);
+                padding: 5px;
+                font-weight: 200;
+            }
+            .progrecbar-css{
+                width: 80%;
+                height: 2px;
+                border-style: solid;
+                border-color: var(--css); border-width: 2px;
+                border-radius: 2px;
+                background-color: var(--css);
+                margin-top: 20px;
+            }
+                  /* formatacao dos links do menu */
+                  .link {
+                    align-items:center;  
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    margin-left:0%;
+                    margin-right: 10%;
+                  }
+    }
+  /*--------------------------------------------*/  
+    @media (max-width:577px){
+      .exercicios-html{
+        border-style: none;
+        width: 250px;
+        height: 100px;
+        border-radius: 10px;
+        padding: 5px;
+        background-color: var(--lista-perguntas);
+        box-shadow: 0 0 10px 2px var(--html);
+        margin-left:0px;
+        margin-top: -30px;
+        }
+        .exercicios-html h3{
+            text-align: center;
+            justify-content: center;
+            padding: 5px;
+            color: var(--font-color);
+            font-weight: 100;
+        }
+        .exercicios-html h3:hover{
+            text-align: center;
+            justify-content: center;
+            color: var(--html);
+            padding: 5px;
+            font-weight: 200;
+        }
+        .progrecbar-html{
+            width: 80%;
+            height: 2px;
+            border-style: solid;
+            border-color: var(--html); border-width: 2px;
+            border-radius: 2px;
+            background-color: var(--html);
+            margin-top: 20px;
+        }
+        .exercicios-css{
+            border-style: none;
+            width: 250px;
+            height: 100px;
+            border-radius: 10px;
+            padding: 10px;
+            background-color: var(--lista-perguntas);
+            box-shadow: 0 0 10px 2px var(--css);
+            margin-left: 0px;
+            margin-top: 60px;
+            }
+            .exercicios-css h3{
+                text-align: center;
+                justify-content: center;
+                padding: 5px;
+                color: var(--font-color);
+                font-weight: 100;
+            }
+            .exercicios-css h3:hover{
+                text-align: center;
+                justify-content: center;
+                color: var(--css);
+                padding: 5px;
+                font-weight: 200;
+            }
+            .progrecbar-css{
+                width: 80%;
+                height: 2px;
+                border-style: solid;
+                border-color: var(--css); border-width: 2px;
+                border-radius: 2px;
+                background-color: var(--css);
+                margin-top: 20px;
+            }
+                  /* formatacao dos links do menu */
+                  .link {
+                    align-items:center;  
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 20px;
+                    margin-left:0%;
+                    margin-right: 2%;
+                  }
+    }

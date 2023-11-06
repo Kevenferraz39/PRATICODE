@@ -1,0 +1,1081 @@
+/*-----------------------------------------------------------------Imports---------------------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;display=swap');
+
+/*-----------------------------------------------------------------Fim dod imports-------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------Variaveis de cor-----------------------------------------------------------------------------------------*/
+:root{
+  --menu-text:rgb(170, 17, 17);
+  --box-shadow-menu:rgb(170, 17, 17);
+  --footer-bacground:rgb(170, 17, 17);
+  --button-hover:rgb(134, 11, 11);
+  --nav-background:#1d1f20;
+  --body-bacground: #161616;
+  --font-color:white;
+  --font-color2:rgb(3, 3, 3);
+  --font-color3:rgb(143, 140, 140);
+  --font-color4:rgb(10, 190, 136);
+  --login:rgb(0, 0, 0);
+  }
+  /*-----------------------------------------------------------------Variaveis de cor-----------------------------------------------------------------------------------------*/
+
+h1{
+    color: var(--font-color);
+    margin-top: 8%;
+    margin-left: 5%;
+}
+p{
+    color: var(--font-color);
+    margin-left: 5%;
+    width: 400px;
+}
+.redes-sociais{
+    width: 500px;
+    height: 320px;
+    float: right;
+    margin-right: -40px;
+    margin-top: -140px;
+}
+
+.redes-sociais img{
+    margin-top: 0px;
+    width: 32px;
+    height: 32px;
+    transition: all 0.2s ease-in-out;
+}
+.redes-sociais img:hover{
+    transform: scale(1.2);
+}
+.redes-sociais ul{
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-left: 35px;
+    list-style-type: none;
+    margin-top:-24px;
+}
+.redes-sociais ul li{
+    padding-bottom:15px;
+    margin-top:-24px;
+}
+.redes-sociais .insta{
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+}
+.redes-sociais .insta a:hover{
+    color: rgb(252, 20, 186);
+}
+.redes-sociais .git{
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+}
+.redes-sociais .git a:hover{
+    color: rgb(122, 4, 248);
+}
+
+.redes-sociais .tiktok{
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+}
+.redes-sociais .tiktok a:hover{
+    color: rgb(20, 252, 148);
+}
+.redes-sociais .linkedin{
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+}
+.redes-sociais .linkedin a:hover{
+    color: rgb(6, 28, 227);
+}
+.redes-sociais .email{
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+}
+.redes-sociais .email a:hover{
+    color: rgb(254, 254, 255);
+}
+#redes-sociais{
+   margin-top: 230px;
+   float: right; 
+   margin-right: -350px;
+}
+.fotos{
+    width: 90%;
+    height: 150px;
+    margin-top: 300px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 30px;
+    box-shadow:  0 0  10px 3px var(--font-color4);
+}
+.fotos .foto img{
+    width: 150px;
+    height: 150px;
+    border-radius: 100%;
+}
+footer{
+    top:50px;
+}
+
+/*--------------------------------------------------------FORMATAÇÃO DE RESPONSIVIDADE---------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------FORMATAÇÃO DE RESPONSIVIDADE WEB----------------------------------------------------------------------------------*/
+@media (max-width:1100px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: right;
+        margin-right: 35px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:60px;
+    margin-right: 90px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 480px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 130px;
+    height: 130px;
+    border-radius: 100%;
+}
+footer{
+    top:80px;
+}}
+
+@media (max-width:900px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: left;
+        margin-left: 30px;
+        margin-top: 20px;
+  }
+  #redes-sociais{
+    margin-top:60px; 
+    margin-right: 190px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 440px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+footer{
+    top:80px;
+}}
+@media (max-width:895px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:35px; 
+    margin-right: 90px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+footer{
+  top:100px;
+}}
+@media (max-width:890px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:35px; 
+    margin-right: 90px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+footer{
+  top:100px;
+}}
+@media (max-width:870px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:35px; 
+    margin-right: 90px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+footer{
+  top:100px;
+}}
+@media (max-width:860px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:35px; 
+    margin-right: 90px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+footer{
+  top:100px;
+}}
+@media (max-width:850px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:35px; 
+    margin-right: 90px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+footer{
+  top:100px;
+}}
+@media (max-width:838px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:35px; 
+    margin-right: 90px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 110px;
+    height: 110px;
+    border-radius: 100%;
+}
+footer{
+    top:100px;
+}}
+@media (max-width:800px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: right;
+        margin-right: 10px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:35px; 
+    margin-right: 90px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 310px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+footer{
+    top:140px;
+}}
+@media (max-width:795px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:40px; 
+    margin-right: 120px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+footer{
+    top:50px;
+}}
+@media (max-width:790px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:40px; 
+    margin-right: 120px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+footer{
+    top:50px;
+}}
+@media (max-width:770px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:40px; 
+    margin-right: 120px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+footer{
+    top:50px;
+}}
+@media (max-width:750px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:40px; 
+    margin-right: 120px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+footer{
+    top:50px;
+}}
+@media (max-width:740px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:40px; 
+    margin-right: 120px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+footer{
+    top:50px;
+}}
+@media (max-width:730px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:40px; 
+    margin-right: 120px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+footer{
+    top:50px;
+}}
+@media (max-width:720px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:40px; 
+    margin-right: 120px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+footer{
+    top:50px;
+}}
+@media (max-width:700px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:40px; 
+    margin-right: 120px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+footer{
+    top:50px;
+}}
+@media (max-width:692px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:40px; 
+    margin-right: 120px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+footer{
+    top:50px;
+}}
+@media (max-width:682px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:40px; 
+    margin-right: 120px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+footer{
+    top:50px;
+}}
+@media (max-width:672px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:40px; 
+    margin-right: 120px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 430px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+footer{
+    top:50px;
+}}
+@media (max-width:600px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: left;
+        margin-left: 20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:50px; 
+    margin-right: 80px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 310px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
+footer{
+    top:100px;
+}}
+@media (max-width:580px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: right;
+        margin-right: -20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:40px; 
+    margin-right: 40px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 310px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+footer{
+    top:100px;
+}}
+@media (max-width:575px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 500px;
+        height: 320px;
+        float: right;
+        margin-right: -20px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:40px; 
+    margin-right: 40px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 310px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+}
+footer{
+    top:100px;
+}}
+/*-------------------------------------------------Responsividade do alinhamento dos menus e da logo------------------------------------------------------------------------*/
+  
+  @media (max-width:672px){
+    .Home img{
+        display: none;
+    }
+    .Home{
+      position: fixed;
+      background-color:var(--nav-background);
+      width: 100vw;
+      height:12vh;
+      padding: 10px;
+      top:-10px;
+      box-shadow: var(--box-shadow-menu) -5px 2px 10px 0;
+  }
+  .link {
+    align-items:center;  
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left:7%;
+    margin-right: 7%;
+  }
+  }
+  
+  @media(max-width:576px){
+  .link {
+    align-items:center;  
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left:5%;
+    margin-right: 5%;
+  }
+  }
+  @media(max-width:575px){
+    .link {
+      align-items:center;  
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-left:2%;
+      margin-right: 2%;
+    }
+    }
+    @media(max-width:574px){
+      .link {
+        align-items:center;  
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left:0%;
+        margin-right: 0%;
+      }
+      }
+ 
+/*--------------------------------------------------Fim-responsividade do alinhamento dos menus e da logo-------------------------------------------------------------------*/
+/*--------------------------------------------------FIM DA FORMATAÇÃO DE RESPONSIVIDADE WEB---------------------------------------------------------------------------------*/
+@media (max-width:414px){
+    body{
+        overflow-x: hidden;
+    }
+    .redes-sociais{
+        width: 400px;
+        height: 220px;
+        float: right;
+        margin-right: -10px;
+        margin-top: 5px;
+  }
+  #redes-sociais{
+    margin-top:250px; 
+    margin-left: 20px;
+    font-size: 25px;
+    margin-bottom: 25px;
+ }
+ .fotos{
+    width: 90%;
+    height: 90px;
+    margin-top: 310px;
+    margin-bottom: 0;
+}
+.fotos .foto{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    display: inline-flex;
+    margin-left: 10px;
+}
+.fotos .foto img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+footer{
+    top:100px;
+}}

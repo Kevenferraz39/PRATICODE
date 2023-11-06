@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;display=swap');
+
+:root{
+    --menu-text:rgb(170, 17, 17);
+    --box-shadow-menu:rgb(170, 17, 17);
+    --footer-bacground:rgb(170, 17, 17);
+    --button-hover:rgb(134, 11, 11);
+    --nav-background:#1d1f20;
+    --body-bacground: #161616;
+    --font-color:white;
+    --font-color2:rgb(3, 3, 3);
+    --font-color3:rgb(143, 140, 140);
+    --font-color4:rgb(170, 17, 17);
+    --login:rgb(0, 0, 0);
+}
+
+body {font-family: Arial, Helvetica, sans-serif;
+}
+span a{
+    color: #ffffff;
+}
+span a:hover{
+    color:var(--menu-text);
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius:10px;
+  border: 1px solid #858282;
+  box-sizing: border-box;
+}
+label{
+    color: var(--font-color);
+}
+/* Set a style for all buttons */
+button {
+  background-color: #0bbb7a00;
+  color: white;
+  padding:5px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-weight: bolder;
+  font-size: 16px;
+}
+
+button:hover {
+   color: rgb(170, 17, 17);
+}
+#but {
+    background-color: var(--font-color4);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 5px;
+    border-style:outset;
+    border-color: var(--font-color4);
+    cursor: pointer;
+    width: 200px;
+    border-radius: 10px;
+  }
+  #but a{
+    padding: 14px 30px;
+  }
+  #but a:hover{
+    color: var(--font-color);
+  }
+  button:hover {
+    opacity: 0.8;
+    color: var(--font-color);
+  }
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color:var(--font-color4);
+  
+}
+.cancelbtn:hover{
+  color: var(--font-color);
+}
+/* Center the image and position the close button */
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: var(--nav-background);
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border-radius: 5%;
+  border: 1px solid #1a1919;
+  width: 460px; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+/*-----------------------FORMATACAO MOBILE------------------------------*/
+@media (max-width:490px){
+  body {font-family: Arial, Helvetica, sans-serif;
+  }
+  span a{
+      color: #ffffff;
+  }
+  span a:hover{
+      color:var(--menu-text);
+  }
+  /* Full-width input fields */
+  input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border-radius:10px;
+    border: 1px solid #858282;
+    box-sizing: border-box;
+  }
+  label{
+      color: var(--font-color);
+  }
+  /* Set a style for all buttons */
+  button {
+    background-color: #0bbb7a00;
+    color: white;
+    padding:5px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    font-weight: bolder;
+    font-size: 16px;
+  }
+  
+  button:hover {
+     color: rgb(170, 17, 17);
+  }
+  #but {
+      background-color: var(--font-color4);
+      color: white;
+      padding: 10px 20px;/*aqui foi alterado*/
+      margin: 8px 5px;
+      border-style:outset;
+      border-color: var(--font-color4);
+      cursor: pointer;
+      width: 100%;/*aqui foi alterado*/
+      border-radius: 10px;
+    }
+    #but a{
+      padding: 14px 30px;
+    }
+    #but a:hover{
+      color: var(--font-color);
+    }
+    button:hover {
+      opacity: 0.8;
+      color: var(--font-color);
+    }
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color:var(--font-color4);
+    
+  }
+  .cancelbtn:hover{
+    color: var(--font-color);
+  }
+  /* Center the image and position the close button */
+  
+  .container {
+    padding: 16px;
+  }
+  
+  span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  
+  /* The Modal (background) */
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: var(--nav-background);
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border-radius: 5%;
+    border: 1px solid #1a1919;
+    width:80%; /* Could be more or less, depending on screen size , aqui foi alterado*/
+  }
+  
+  /* The Close Button (x) */
+  .close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+}
+/*--------------------------------------------------------FORMATAÇÃO DE RESPONSIVIDADE MOBILE---------------------------------------------------------------------------------*/
+@media(max-width:414px){
+  .link {  
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left:0%;
+    margin-right: 0%;
+    font-size: 12px;
+  }
+  .dropdown .dropbtn{
+    font-size: 12px;
+  }
+  button{
+    font-size: 12px;
+  }
+  .focus{
+    font-size: 18px;
+    font-weight:bold;
+  }
+  }
+
+  @media(max-width:375px){
+    .link {  
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-left:0%;
+      margin-right: 0%;
+      font-size: 12px;
+    }
+    .dropdown .dropbtn{
+      font-size: 10px;
+    }
+    button{
+      font-size: 10px;
+    }
+    .focus{
+      font-size: 18px;
+      font-weight:bold;
+    }
+    }
+
+  @media(max-width:375px){
+    .link {  
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-left:0%;
+      margin-right: 0%;
+      font-size: 12px;
+    }
+    .dropdown .dropbtn{
+      font-size: 10px;
+    }
+    button{
+      font-size: 10px;
+    }
+    .focus{
+      font-size: 18px;
+      font-weight:bold;
+    }
+    }
+    @media(max-width:360px){
+      .link {  
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left:0%;
+        margin-right: 0%;
+        font-size: 10px;
+      }
+      .dropdown .dropbtn{
+        font-size: 10px;
+      }
+      button{
+        font-size: 10px;
+      }
+      .focus{
+        font-size: 18px;
+        font-weight:bold;
+      }
+      }
+      @media(max-width:320px){
+        .link {  
+          display: flex;
+          justify-content: center;
+          margin-top: 30px;
+          margin-left:0%;
+          margin-right: 0%;
+          font-size: 10px;
+        }
+        .dropdown .dropbtn{
+          font-size: 10px;
+        }
+        button{
+          font-size: 10px;
+        }
+        .focus{
+          font-size: 16px;
+          font-weight:bold;
+        }
+        }

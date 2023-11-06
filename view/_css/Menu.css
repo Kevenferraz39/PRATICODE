@@ -1,0 +1,353 @@
+/*-----------------------------------------------------------------Imports---------------------------------------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;display=swap');
+
+/*-----------------------------------------------------------------Fim dod imports-------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------Variaveis de cor-----------------------------------------------------------------------------------------*/
+:root{
+--menu-text:rgb(170, 17, 17);
+--box-shadow-menu:rgb(170, 17, 17);
+--footer-bacground:rgb(170, 17, 17);
+--nav-background:#1d1f20;
+--body-bacground: #161616;
+--font-color:white;
+--font-color2:rgb(3, 3, 3);
+--font-color3:rgb(143, 140, 140); 
+--font-color4:rgb(170, 17, 17); 
+} 
+*,*::after, *::before{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/*-----------------------------------------------------------------Variaveis de cor-----------------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------Formatacao basica do body--------------------------------------------------------------------------------*/
+body{
+    background-color:var(--body-bacground); /*definicao de cor de fundo do nosso site*/
+    overflow-x: hidden;  /*isso faz com que tudo que transborde o tamanho maximo da tela o codigo morre*/
+    font-family: 'Roboto', sans-serif; /*definicao de fonte do nosso site*/
+    margin: 0; /*definicao das margin do nosso site*/
+    padding: 0;  /*definicao do espaco interno do site*/
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+  background: #f1f1f123; 
+}
+ 
+/* Handle */
+body::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+  background: #a80a0a; 
+  border-radius: 10px;
+}
+/*-----------------------------------------------------------------Fim da formatacao basica do body-------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------Formatacao do header-------------------------------------------------------------------------------------*/
+
+.Home{  /* Home e a clase atribuida para o header */ 
+    position: fixed; /*isso define que nosso header sera fixo no topo*/
+    background-color:var(--nav-background);   /*isso define a cor do nosso header*/
+    width: 100vw; /*isso define a largura do header*/
+    height:13vh; /*isso define a altura do header*/
+    padding: 10px; /*isso define que o espaço interno tera 10px em todas as bordas*/
+    top:-10px; /*isso define que nosso header sera fixo no topo*/
+    box-shadow: var(--box-shadow-menu) -5px 2px 10px 0;   /*isso serve para criar essa luz vermelha que aparece logo abaixo do header*/
+}
+.link { /* link é a clase atribuida para a div que contem as li do nosso menu*/
+    float: right; /*isso define que o alinhamento sera no fim da pagina*/
+    display: inline-flex; /*para que o alinhamento das li seja em linha reta*/
+    margin-right:20px; /*serve para definir a margin lateral right*/
+    margin-top: 30px; /*isso define qual a distancia que as li ficarao do topo da pagina*/
+}
+.linke{ /* linke é a clase atribuida para as li do nosso menu*/
+    color:var(--font-color); /*definição de cor do texto do menu*/
+    list-style: none; /*remoção da estilizacao padrao de listagem que as tag li vem*/
+    display: inline-flex; /*para que o alinhamento das li seja em linha reta*/
+    position:relative; /*serve para que aposicao as li sejam relativas*/
+    padding: 5px; /*isso define que o espaço interno tera 5px em todas as bordas*/
+}
+a{
+    color:var(--font-color);  /*definição de cor do links do menu*/
+    text-decoration: none; /*remove a decoração padrao das tegs a*/
+}
+a:hover{
+    color:var(--font-color4); /*ao passar o cursor sobre o link a cor sera trocada*/
+}
+/*-------------------------------------------------------------Formatacao do "FOCUOS"---------------------------------------------------------------------------------------*/
+
+.focus{ /* focuos é a clase atribuida para a formatação especial para que o usuario indentifique que a a pagina que ele esta é tal*/
+  color:var(--font-color); /*definição de cor do texto do menu*/
+  list-style: none; /*remoção da estilizacao padrao de listagem que as tag li vem*/
+  display: inline-flex; /*para que o alinhamento das li seja em linha reta*/
+  position:relative;  /*serve para que aposicao as li sejam relativas*/
+  top: -5px; /*isso diminui a distancia do menu com o topo da pagina*/
+  padding: 0px; /*isso define que o espaço interno tera 0px em todas as bordas*/
+  font-size: 20px; /*isso define o tamanho da fonte do menu*/
+}
+.focus a{
+  color:var(--font-color4); /*definição de cor do links do menu*/
+  text-decoration: none; /*remove a decoração padrao das tegs a*/
+}
+.focus a:hover{
+  color:#640606; /*ao passar o cursor sobre o link a cor sera trocada*/
+}
+
+/*-------------------------------------------------------------Fim da formatacao do "FOCUOS"-------------------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------Formatação da logo------------------------------------------------------------------------------------------*/
+
+.Home img{
+    position:fixed; /*isso define que nossa logo sera fixo no topo*/
+    width: 150px; /*definição da largura da logo*/
+    height: 150px; /*definição da altura da logo*/
+    margin-right:100px; /*serve para definir a margin lateral right*/
+    margin-top: -25px; /*isso diminui a distancia da logo com o topo da pagina*/
+    
+}
+/*--------------------------------------------------------Fim da formatação da logo ---------------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------Botão exercicios dropdown---------------------------------------------------------------------------------------*/
+
+.dropdown {
+    float: right; /*serve para que o drop flutue no lado direito*/
+    overflow: hidden; /*isso faz com que tudo que transborde o tamanho maximo da tela o codigo morre*/
+    margin-right: 1px; /* definição da margin direita*/
+  }
+  
+  .dropdown .dropbtn{
+    cursor: pointer; /*ao passar o cursor sobre o drop o cursor se tornarar pointer*/
+    font-size: 16px; /*define o tamanho da font*/ 
+    border: none; /* define que o estilo da borda sera none*/
+    outline: none; /*remover o comportamento padrão do browser de adicionar uma borda a um elemento quando ele esta selecionado*/
+    color: var(--font-color); /*definicao de cor do texto*/
+    padding: 5px; /*isso define que o espaço interno tera 5px em todas as bordas*/
+    background-color: var(--nav-background); /*definicao de cor do fundo*/
+    font-family: inherit; /* permite que se faça uma lista de prioridades de familias de fontes e/ou nomes genéricos de famílias a serem especificados para um elemento selecionado*/
+    margin: 0; /*definicao de margin geral*/
+    font-weight:bold; /* isso deixa as letras em negrito*/ 
+  }
+  
+  .dropdown:hover .dropbtn, .dropbtn:focus {/*quando pasar o mouse sobre os itens vai alterar a formatacao original */
+   color:var(--box-shadow-menu); /*definicao de cor do texto*/
+  }
+  
+  .dropdown-content {
+    display: none; /*display:none retira o elemento do layout da página*/
+    position: absolute; /*define a posicao do item como absoluta*/
+    top: 65px; /*define a margin do topo do item*/
+    background-color:var(--nav-background); /*definicao de cor do fundo*/
+    min-width: 200px; /*define o tamanho minimo da largura do item*/
+    z-index: 1; /*A propriedade Z-index especifica a ordem da pilha de um elemento do anúncio*/
+  }
+  
+  .dropdown-content a {
+    float: none; /* define que o float sera none*/
+    color: var(--font-color); /*definicao de cor do texto*/
+    padding: 10px; /*isso define que o espaço interno tera 10px em todas as bordas*/
+    text-decoration: none; /*isso define a decoracao do texto nesse caso que é none a decoracao nao aparecerá*/
+    display: block; /*podemos organizar os elementos lado a lado e definirmos as propriedades de largura e altura, pois elas não serão ignoradas pelo navegador*/
+    text-align: left; /*define qu eo alinhamento dos texto sera a esquerda*/
+  }
+  
+  .dropdown-content a:hover {/*quando pasar o mouse sobre os itens vai alterar a formatacao original */
+    color:var(--box-shadow-menu); /*definicao de cor do texto*/
+  }
+  
+  .show{
+    margin-top:-30px; /*isso diminui a distancia da do item com o topo da pagina*/
+    display: block; /*podemos organizar os elementos lado a lado e definirmos as propriedades de largura e altura, pois elas não serão ignoradas pelo navegador*/
+  }
+/*-----------------------------------------------------Fim da formatação do botao exercicios dropdown------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------Fim da formatação do header-------------------------------------------------------------------------------------------*/
+
+
+/*content*/
+.content{
+    margin-top: 100px; /*define o tamanho da margin do topo do item content*/
+  
+}
+.content #GIF{
+    width: 60%; /*definicao de largura do gif em 60% do tamanho da tela seja qual for o tamanho da tela*/
+    border-radius: 10px; /*isso arredonda as bordad dos itens conforme o valor de pixeis for informado*/
+}
+
+/*fim-content*/
+
+/*--------------------------------------------------------FORMATAÇÃO DE RESPONSIVIDADE---------------------------------------------------------------------------------------*/
+
+/*@Media visa facilitar o processo de configuração e renderização dos elementos de um site em diferentes tamanhos de tela. Dessa forma, 
+independente do dispositivo que o usuário estiver utilizando, o site irá se adaptar e ficar totalmente responsivo, sem quebras de layout*/
+
+@media (max-width:590px){
+  .Home img{
+      display: none;
+  }
+  .Home{
+    position: fixed;
+    background-color:var(--nav-background);
+    width: 100vw;
+    height:15vh;
+    padding: 10px;
+    top:-10px;
+    box-shadow: var(--box-shadow-menu) -5px 2px 10px 0;
+}
+}    
+
+@media (max-width:672px){
+  .Home img{
+      display: none;
+  }
+  .Home{
+    position: fixed;
+    background-color:var(--nav-background);
+    width: 100vw;
+    height:12vh;
+    padding: 10px;
+    top:-10px;
+    box-shadow: var(--box-shadow-menu) -5px 2px 10px 0;
+}
+.link {
+  align-items:center;  
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left:10%;
+  margin-right: 10%;
+}
+}
+@media(max-width:604px){
+  .link {
+    align-items:center;  
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left:5%;
+    margin-right: 8%;
+  }
+  }
+@media(max-width:576px){
+.link {
+  align-items:center;  
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left:5%;
+  margin-right: 5%;
+}
+}
+@media(max-width:575px){
+  .link {
+    align-items:center;  
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left:2%;
+    margin-right: 2%;
+  }
+  }
+  @media(max-width:574px){
+    .link {
+      align-items:center;  
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-left:1%;
+      margin-right: 5%;
+    }
+    }
+/*--------------------------------------------------------FIM DA FORMATAÇÃO DE RESPONSIVIDADE---------------------------------------------------------------------------------*/    
+/*--------------------------------------------------------FORMATAÇÃO DE RESPONSIVIDADE MOBILE---------------------------------------------------------------------------------*/
+@media(max-width:414px){
+  .link {  
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-left:0%;
+    margin-right: 0%;
+    font-size: 12px;
+  }
+  .dropdown .dropbtn{
+    font-size: 12px;
+  }
+  button{
+    font-size: 12px;
+  }
+  .focus{
+    font-size: 18px;
+    font-weight:bold;
+  }
+  }
+
+  @media(max-width:375px){
+    .link {  
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-left:0%;
+      margin-right: 0%;
+      font-size: 12px;
+    }
+    .dropdown .dropbtn{
+      font-size: 10px;
+    }
+    button{
+      font-size: 10px;
+    }
+    .focus{
+      font-size: 18px;
+      font-weight:bold;
+    }
+    }
+
+  @media(max-width:375px){
+    .link {  
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-left:0%;
+      margin-right: 0%;
+      font-size: 12px;
+    }
+    .dropdown .dropbtn{
+      font-size: 10px;
+    }
+    button{
+      font-size: 10px;
+    }
+    .focus{
+      font-size: 18px;
+      font-weight:bold;
+    }
+    }
+    @media(max-width:360px){
+      .link {  
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+        margin-left:0%;
+        margin-right: 0%;
+        font-size: 10px;
+      }
+      .dropdown .dropbtn{
+        font-size: 10px;
+      }
+      button{
+        font-size: 10px;
+      }
+      .focus{
+        font-size: 18px;
+        font-weight:bold;
+      }
+      }

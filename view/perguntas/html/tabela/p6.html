@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css -->
+    <link rel="stylesheet" href="../../../_css/Menu.css">
+    <link rel="stylesheet" href="../../../_css/footer.css">
+    <link rel="stylesheet" href="../../../_css/perguntasHTML.css">
+    <!-- fim-css -->
+    <link rel="shortcut icon" href="../../../_img/logo.png" type="image/x-icon">
+    <title>Questão 6</title> 
+</head>
+<body>
+     <!-- Menu -->
+<header class="Home">
+    <a href="../../../Menu.html">
+    <img src="../../../_img/Logo-SemFundo.png" alt="foto" id="logo"/></a>
+        <div class="link">
+            <li class="linke"><b><a href="../../../Menu.html">Home</a></b></li>
+            <li class="focus"><b><a href="#">HTML</a></b></li>
+            <li class="linke"><b><a href="../../../faleConosco.html">Fale conosco</a></b></li>
+            <li class="linke"><b><a href="../../../Desenvolvedores.html">Desenvolvedores</a></b></li>
+        <!-- Projetos botão dropdown -->
+            <div class="dropdown">
+                <button class="dropbtn" onclick="myFunction()">Exercicios</button>
+                <div class="dropdown-content" id="myDropdown">
+                    <a href="../../../Exercicios.html"><b>Exercicios</b></a>
+                    <a href="../../../perguntasHTML.html"><b>HTML</b></a>
+                    <a href="../../../perguntasCSS.html"><b>CSS</b></a>
+                </div>
+            </div> 
+        <!-- final do botão dropdown -->
+        </div>
+        <script>
+            /* Quando o usuário clicar no botão, alterne entre ocultar e mostrar o conteúdo do menu suspenso*/
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+            
+            //Feche o menu suspenso se o usuário clicar fora dele
+            window.onclick = function(e) {
+              if (!e.target.matches('.dropbtn')) {
+              var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                  myDropdown.classList.remove('show');
+                }
+              }
+            }
+        </script>
+</header>
+    <!-- fim do Menu -->
+    <!-- conteudo da pagina -->
+    <br><br><br><br><br>
+<div class="container">
+   <div class="lista-perguntas">
+        <div class="top">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
+                <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
+                </svg><h3>Perguntas de HTML 5</h3>
+        </div>
+        <div class="inner-div">
+            <ul>
+                <!-- Pergunta 6 -->     
+                <form action="../../../../controller/perguntas/alternativa.php" method="post">
+                <input type="number" name="id" value="6" hidden>
+                <a href="#">
+                    <li>
+                        <b>6. Como alinhar o texto à direita em uma célula de tabela HTML?</b>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <input type="radio" name="resposta" value="a">&nbsp;&lt;td align="right"&gt;
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <input type="radio" name="resposta" value="b">&nbsp;&lt;align="right"&gt;
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <input type="radio" name="resposta" value="c">&nbsp;&lt;right&gt;
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <input type="radio" name="resposta" value="d">&nbsp;&lt;td style="text-align: right;"&gt;
+                    </li>
+                </a>
+                <!-- Adicione mais itens conforme necessário -->
+            </ul>
+        </div>
+        <center>
+            <div class="botoes">
+                <a href="./index.html" class="b">Voltar</a>
+                <input type="submit" value="Enviar" id="enviar">
+            </div>
+        </center>
+        </form>
+   </div>
+</div>
+    <!--  fim do conteudo da pagina -->
+    <!--  footer -->
+    <footer>
+        <div class="footer-line"></div>
+        <div class="footer-wrapper">
+            <section class="footer-top">
+                <div class="footer-headline">
+                    <h2>Subscribe to our newsletter</h2>
+                    <p>
+                        Stay up to date our news and articles
+                    </p>
+                </div>
+                <div class="footer-subscribe">
+                    <input type="email" spellcheck="false" placeholder="Digite seu E-mail....">
+                    <button>Sing UP</button>
+                </div>
+            </section>
+            <div class="footer-columns">
+                <section class="footer-logo">
+                    <a href="#">
+                        <img src="../../../_img/Logo-SemFundo.png" alt="logo">
+                    </a>
+                </section>
+                <section>
+                    <h3>Product</h3>
+                    <ul>
+                        <li>
+                            <a href="#" title="API">API</a>
+                        </li>
+                        <li>
+                            <a href="#" title="teste">teste</a>
+                        </li>
+                        <li>
+                            <a href="#" title="teste2">teste2</a>
+                        </li>
+                        <li>
+                            <a href="#" title="API">API</a>
+                        </li><li>
+                            <a href="#" title="API">API</a>
+                        </li>
+                        <!-- More links -->
+                    </ul>
+                </section>
+                <section>
+                    <h3>HTML</h3>
+                    <ul>
+                        <li>
+                            <a href="#" title="table">&lt; Tabela &gt;</a>
+                        </li>
+                        <li>
+                            <a href="#" title="div">&lt; Div &gt;</a>
+                        </li>
+                        <li>
+                            <a href="#" title="section">&lt; Section &gt;</a>
+                        </li>
+                        <li>
+                            <a href="#" title="header">&lt; Header &gt;</a>
+                        </li><li>
+                            <a href="#" title="main">&lt; Main &gt;</a>
+                        </li>
+                        <!-- More links -->
+                    </ul>
+                </section>
+                <section>
+                    <h3>CSS</h3>
+                    <ul>
+                        <li>
+                            <a href="#" title="after">::after</a>
+                        </li>
+                        <li>
+                            <a href="#" title="before">::before</a>
+                        </li>
+                        <li>
+                            <a href="#" title="hover">:hover</a>
+                        </li>
+                        <li>
+                            <a href="#" title="translate">:translate</a>
+                        </li><li>
+                            <a href="#" title="transition">transition</a>
+                        </li>
+                        <!-- More links -->
+                    </ul>
+                </section>
+                <section>
+                    <h3>CSS</h3>
+                    <ul>
+                        <li>
+                            <a href="#" title="after">::after</a>
+                        </li>
+                        <li>
+                            <a href="#" title="before">::before</a>
+                        </li>
+                        <li>
+                            <a href="#" title="hover">:hover</a>
+                        </li>
+                        <li>
+                            <a href="#" title="translate">:translate</a>
+                        </li><li>
+                            <a href="#" title="transition">transition</a>
+                        </li>
+                        <!-- More links -->
+                    </ul>
+                </section>
+                        <!-- More sections -->            
+            </div>
+            <div class="footer-bottom">
+                <div class="social-links">
+                    <ul>
+                        <li>
+                            <a href="#" title="Instagram">
+                                <img src="../../../_img/Instagram.png" alt="imagem">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="gith">
+                                <img src="../../../_img/github-logo-removebg-preview.png" alt="imagem">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="tiktok">
+                                <img src="../../../_img/tiktok-removebg-preview.png" alt="imagem">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="linkedin">
+                                <img src="../../../_img/icons8-linkedin-48.png" alt="imagem">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" title="email">
+                                <img src="../../../_img/icons8-gmail-logo-48.png" alt="imagem">
+                            </a>
+                        </li>
+                        <!-- More social links -->
+                    </ul>
+                </div>
+                <small>
+                    &copy; Atheros Intelligence Ltd. <span id="year"></span>,
+                    All rights reseved
+                </small>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
+    <!--  fim do footer -->
+</body>
+</html>

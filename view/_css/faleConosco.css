@@ -1,0 +1,209 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;display=swap');
+/*fim-imports*/
+ 
+:root{
+  --menu-text:rgb(170, 17, 17);
+  --box-shadow-menu:rgb(170, 17, 17);
+  --footer-bacground:rgb(170, 17, 17);
+  --button-hover:rgb(134, 11, 11);
+  --nav-background:#1d1f20;
+  --body-bacground: #161616;
+  --font-color:white;
+  --font-color2:rgb(3, 3, 3);
+  --font-color3:rgb(143, 140, 140);
+  --font-color4:rgb(10, 190, 136);
+  --login:rgb(0, 0, 0);
+  }
+
+h1{
+    color: var(--font-color);
+    margin-top: 7%;
+    margin-left: 5%;
+}
+p{
+    color: var(--font-color);
+    margin-left: 5%;
+    width: 400px;
+}
+.redes-sociais{
+    width: 500px;
+    height: 320px;
+    float: left;
+    margin-left: 5%;
+    margin-top: 40px;
+}
+
+.redes-sociais img{
+    margin-top: -10px;
+    width: 42px;
+    height: 42px;
+    transition: all 0.2s ease-in-out;
+}
+.redes-sociais img:hover{
+    transform: scale(1.2);
+}
+.redes-sociais ul{
+    display: inline-flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    list-style-type: none;
+    margin-top: -34px;
+}
+.redes-sociais ul li{
+    padding-bottom:5px;
+    margin-top: -24px;
+}
+.redes-sociais .insta{
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+}
+.redes-sociais .insta a:hover{
+    color: rgb(252, 20, 186);
+}
+.redes-sociais .git{
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+}
+.redes-sociais .git a:hover{
+    color: rgb(122, 4, 248);
+}
+
+.redes-sociais .tiktok{
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+}
+.redes-sociais .tiktok a:hover{
+    color: rgb(20, 252, 148);
+}
+.redes-sociais .linkedin{
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+}
+.redes-sociais .linkedin a:hover{
+    color: rgb(6, 28, 227);
+}
+.redes-sociais .email{
+    width: 100%;
+    padding: 10px;
+    height: 50px;
+}
+.redes-sociais .email a:hover{
+    color: rgb(254, 254, 255);
+}
+#redes-sociais{
+   margin-top: 230px;
+   float: right; 
+   margin-right: -350px;
+}
+.fotos{
+    width: 90%;
+    height: 150px;
+    margin-top: 300px;
+    margin-bottom: 0;
+}
+
+footer{
+    top:330px;
+}
+@media (max-width: 414px) {
+    h1{
+        color: var(--font-color);
+        margin-top: 7%;
+        margin-left: 5%;
+    }
+    p{
+        color: var(--font-color);
+        margin: 10px;
+        width: 360px;
+        text-align: justify;
+    }
+    .redes-sociais{
+        width: 400px;
+        height: 320px;
+        float: left;
+        margin-left: 5%;
+        margin-top: 40px;
+    }
+    
+    .redes-sociais img{
+        margin-top: -10px;
+        width: 42px;
+        height: 42px;
+        transition: all 0.2s ease-in-out;
+    }
+    .redes-sociais img:hover{
+        transform: scale(1.2);
+    }
+    .redes-sociais ul{
+        display: inline-flex;
+        flex-wrap: wrap;
+        margin-left: 10px;
+        list-style-type: none;
+        margin-top: -34px;
+    }
+    .redes-sociais ul li{
+        padding-bottom:5px;
+        margin-top: -24px;
+    }
+    .redes-sociais .insta{
+        width: 100%;
+        padding: 10px;
+        height: 50px;
+    }
+    .redes-sociais .insta a:hover{
+        color: rgb(252, 20, 186);
+    }
+    .redes-sociais .git{
+        width: 100%;
+        padding: 10px;
+        height: 50px;
+    }
+    .redes-sociais .git a:hover{
+        color: rgb(122, 4, 248);
+    }
+    
+    .redes-sociais .tiktok{
+        width: 100%;
+        padding: 10px;
+        height: 50px;
+    }
+    .redes-sociais .tiktok a:hover{
+        color: rgb(20, 252, 148);
+    }
+    .redes-sociais .linkedin{
+        width: 100%;
+        padding: 10px;
+        height: 50px;
+    }
+    .redes-sociais .linkedin a:hover{
+        color: rgb(6, 28, 227);
+    }
+    .redes-sociais .email{
+        width: 100%;
+        padding: 10px;
+        height: 50px;
+    }
+    .redes-sociais .email a:hover{
+        color: rgb(254, 254, 255);
+    }
+    #redes-sociais{
+       margin-top: 230px;
+       float: right; 
+       margin-right: -350px;
+    }
+    .fotos{
+        width: 90%;
+        height: 150px;
+        margin-top: 300px;
+        margin-bottom: 0;
+    }
+    
+    footer{
+        top:330px;
+    }   
+}

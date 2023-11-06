@@ -1,0 +1,275 @@
+/*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;display=swap');
+/*fim-imports*/
+  
+:root{
+  --menu-text:rgb(170, 17, 17);
+  --box-shadow-menu:rgb(170, 17, 17);
+  --footer-bacground:rgb(170, 17, 17);
+  --button-hover:rgb(134, 11, 11);
+  --nav-background:#1d1f20;
+  --body-bacground: #000000;
+  --font-color:white;
+  --font-color2:rgb(3, 3, 3);
+  --font-color3:rgb(143, 140, 140);
+  --font-color4:rgb(170, 17, 17);
+  --login:#212529;
+  --input-loguin:rgb(231, 231, 231);
+  }
+body{
+  background-color: var(--body-bacground);
+  margin: 0;
+  padding: 0;
+}
+.Home{
+  position: fixed;
+  background-color:var(--nav-background);
+  width: 100vw;
+  height:10vh;
+  top:-10px;
+  box-shadow: var(--box-shadow-menu) -5px 2px 10px 0;
+}
+.card-cadastrar{ 
+    width: 500px;
+    height: 585px;
+    border-radius: 10px;
+    background-color: var(--login);
+    margin: 2%;
+    justify-content: center;
+    margin-top:15%;
+  }
+  label{
+    color: var(--font-color);
+    justify-content: left;
+    margin-left:10%;
+    display: flex;
+}
+ input{
+    width: 80%;
+    height: 20px;
+    padding: 20px;
+    border-radius:10px;
+    background-color:var(--input-loguin); 
+    border-style: solid;
+    color: var(--font-color2); 
+    outline: none;
+  }
+ 
+  .fonte{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align:left;
+  }
+
+  .titulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    margin-top: -5px;
+    text-align: center;
+   color: aliceblue;
+  }
+
+  #btn-cadastrar{
+    background-color: var(--box-shadow-menu);
+    width: 80%;
+    height: 45px;
+    padding: 10px;
+    color: var(--font-color);
+    border-radius: 10px;
+    border-color: var(--box-shadow-menu);
+    border-style:outset;
+    margin-bottom: 10px;
+  }
+  #btn-cadastrar:hover{
+    background-color:var(--button-hover);
+    font-weight: bold;
+    cursor: pointer;
+  }
+  #btn-voltar{
+    background-color: var(--box-shadow-menu);
+    width: 40%;
+    height: 40px;
+    padding: 12px;
+    color: var(--font-color);
+    margin-left: -350px;
+    border-radius: 10px;
+    border-color: var(--box-shadow-menu);
+    border-radius:0;
+  }
+  #btn-voltar:hover{
+    background-color:var(--button-hover);
+    cursor: pointer;
+    
+  }
+
+  @media (max-width:672px){
+    .Home img{
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      text-align: center;
+    }
+    .Home{
+      position: fixed;
+      background-color:var(--nav-background);
+      width: 100vw;
+      height:10vh;
+      top:-10px;
+      box-shadow: var(--box-shadow-menu) -5px 2px 10px 0;
+  }
+}
+  @media (max-width:1600px){
+    .card-cadastrar{
+      width: 500px;
+      height: 585px;
+      border-radius: 10px;
+      background-color: var(--login);
+      margin: 2%;
+      justify-content: center;
+      margin-top:11%;
+    }
+  } 
+  /*------------------------------------------------------------------------*/
+  @media (max-width:1500px){
+    .card-cadastrar{
+      width: 500px;
+      height: 585px;
+      border-radius: 10px;
+      background-color: var(--login);
+      margin: 2%;
+      justify-content: center;
+      margin-top:11%;
+    }
+  } 
+  /*------------------------------------------------------------------------*/
+  @media (max-width:1400px){
+    .card-cadastrar{
+      width: 500px;
+      height: 585px;
+      border-radius: 10px;
+      background-color: var(--login);
+      margin: 2%;
+      justify-content: center;
+      margin-top:11%;
+    }
+  } 
+/*------------------------------------------------------------------------*/
+  @media (max-width:1300px){
+    .card-cadastrar{
+      width: 500px;
+      height: 585px;
+      border-radius: 10px;
+      background-color: var(--login);
+      margin: 2%;
+      justify-content: center;
+      margin-top:12%;
+    }
+  } 
+/*------------------------------------------------------------------------*/
+  @media (max-width:1200px){
+    .card-cadastrar{
+      width: 500px;
+      height: 585px;
+      border-radius: 10px;
+      background-color: var(--login);
+      margin: 2%;
+      justify-content: center;
+      margin-top:14%;
+    }
+  } 
+/*------------------------------------------------------------------------*/
+  @media (max-width:1100px){
+    .card-cadastrar{
+      width: 500px;
+      height: 585px;
+      border-radius: 10px;
+      background-color: var(--login);
+      margin: 2%;
+      justify-content: center;
+      margin-top:16%;
+    }
+  } 
+/*------------------------------------------------------------------------*/
+  @media (max-width:950px){
+    .card-cadastrar{
+      width: 500px;
+      height: 585px;
+      border-radius: 10px;
+      background-color: var(--login);
+      margin: 2%;
+      justify-content: center;
+      margin-top:18%;
+    }
+  } 
+/*------------------------------------------------------------------------*/
+  @media (max-width:850px){
+    .card-cadastrar{
+      width: 500px;
+      height: 585px;
+      border-radius: 10px;
+      background-color: var(--login);
+      margin: 2%;
+      justify-content: center;
+      margin-top:18%;
+    }
+  } 
+/*------------------------------------------------------------------------*/
+  @media (max-width:750px){
+    .card-cadastrar{
+      width: 500px;
+      height: 585px;
+      border-radius: 10px;
+      background-color: var(--login);
+      margin: 2%;
+      justify-content: center;
+      margin-top:25%;
+    }
+  } 
+/*------------------------------------------------------------------------*/
+  @media (max-width:650px){
+    .card-cadastrar{
+      width: 500px;
+      height: 585px;
+      border-radius: 10px;
+      background-color: var(--login);
+      margin: 2%;
+      justify-content: center;
+      margin-top:25%;
+    }
+  } 
+/*------------------------------------------------------------------------*/
+  @media (max-width:590px){
+    .card-cadastrar{
+      width: 70%;
+      height: 585px;
+      border-radius: 10px;
+      background-color: var(--login);
+      margin: 2%;
+      justify-content: center;
+      margin-top:35%;
+    }
+    #btn-voltar{
+      margin-left: -230px;
+    
+    }
+  }    
+  /*-----------------------FORMATACAO MOBILE------------------------------*/
+  @media(max-width:490px){
+    .card-cadastrar{
+      width: 80%;
+      height: 585px;
+      border-radius: 10px;
+      background-color: var(--login);
+      margin: 2%;
+      justify-content: center;
+      margin-top:40%;
+    }
+    #btn-voltar{
+      margin-left: -170px;
+    
+    }
+  }
+
+ 
+ 
+ 

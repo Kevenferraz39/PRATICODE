@@ -1,0 +1,77 @@
+
+
+.menup { 
+    width: 1000px;
+    height: 900px;
+    border-radius: 5%;
+    background-color: var(--nav-background);
+    margin: 2%;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  /*imports*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;display=swap');
+/*fim-imports*/
+
+
+ 
+:root{
+  --menu-text:rgb(170, 17, 17);
+  --box-shadow-menu:rgb(170, 17, 17);
+  --footer-bacground:rgb(170, 17, 17);
+  --nav-background:#1d1f20;
+  --body-bacground: #161616;
+  --font-color:white;
+  --font-color2:rgb(3, 3, 3);
+  --font-color3:rgb(143, 140, 140);
+  --font-color4:rgb(10, 190, 136);
+  --login:rgb(0, 0, 0);
+  }
+
+
+
+body{
+  background-color: var(--body-bacground);
+  margin: 0;
+  padding: 0;
+}
+
+ 
+  .fonte{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-align:left;
+  }
+
+  .titulo{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    text-align: left;
+   color: aliceblue;
+  }
+
+  #btn-limpar{
+    background-color: var(--box-shadow-menu);
+    width: 40%;
+    height: 40px;
+    padding: 10px;
+    color: var(--font-color);
+    border-radius: 10px;
+    border-color: var(--box-shadow-menu);
+  }
+  #btn-enviar{
+    background-color: var(--box-shadow-menu);
+    width: 40%;
+    height: 40px;
+    padding: 10px;
+    color: var(--font-color);
+    border-radius: 10px;
+    border-color: var(--box-shadow-menu);
+  }
+
+
+
+ 
+ 
+ 
