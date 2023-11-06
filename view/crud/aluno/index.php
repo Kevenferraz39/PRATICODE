@@ -13,7 +13,7 @@
     <div>
         <table>
             <thead>
-                <tr>
+                <tr><!--cabeçalho da tabela-->
                     <th>ID</th>
                     <th>Nome</th>
                     <th>Email</th>
@@ -24,7 +24,7 @@
             </thead>
             <tbody>
                 <?php while ($dados = mysqli_fetch_assoc($resultado)) { ?>
-                <tr>
+                <tr><!--linhas da tabela-->
                     <td> <?= $dados['idAluno'] ?> </td>
                     <td> <?= $dados['nome'] ?> </td>
                     <td> <?= $dados['email'] ?> </td>
