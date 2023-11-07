@@ -1,0 +1,46 @@
+.conteudo-tabela{
+    background-color: rgb(49, 49, 49);
+    padding: 5px;
+    height: 250px;
+    width: 600px;
+    overflow-y:scroll;
+    border-radius: 10px;
+}
+/*----------barra scroll---------------*/
+.conteudo-tabela::-webkit-scrollbar {
+    width: 10px;
+  }
+  .conteudo-tabela::-webkit-scrollbar-track {
+    background: #f1f1f100; 
+  }
+   
+  /* Handle */
+  .conteudo-tabela::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .conteudo-tabela::-webkit-scrollbar-thumb:hover {
+    background: rgb(170, 17, 17); 
+    border-radius: 10px;
+  }
+  /*----------barra scroll---------------*/
+table{
+    background-color: blue;
+    padding: 10px;
+    border-style: none;
+    width: 95%;
+}
+tr{
+    background-color: aliceblue;
+    padding: 10px;
+}
+td{
+    background-color: yellow;
+}
+.top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}

@@ -1,0 +1,74 @@
+  
+.conteudo{
+    background-color:var(--body-bacground);
+    width: 90%;
+    height: 500px;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  @media(max-width:1550px){
+      .conteudo{
+    background-color:var(--body-bacground);
+    width: 90%;
+    height: 500px;
+    padding: 10px;
+    display:flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow:hidden;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+    
+    }
+  .conteudo::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .conteudo::-webkit-scrollbar-track {
+    background: #f1f1f100; 
+  }
+   
+  /* Handle */
+  .conteudo::-webkit-scrollbar-thumb {
+    background: #88888819; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .conteudo::-webkit-scrollbar-thumb:hover {
+    background: #a80a0a; 
+    border-radius: 10px;
+  }
+  .atividade{
+    background-color: rgb(49, 49, 49);
+    border-radius: 10px;
+    height: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 40px;
+    scroll-snap-align: center;
+    min-width: 300px;
+    object-fit: cover;
+  }  
+  .atividade a{
+      font-weight: bolder;
+      font-size: 18px;
+      border-radius: 6px;
+      padding: 5px 100px;
+      width: 300px;
+      height: 50px;
+      background-color: #a80a0a; 
+  }
+  .atividade a:hover{
+      color: white;
+      font-size: 20px;
+  }
+  .atividade img{
+      width: 200px;
+      height: 200px;
+      border-radius: 5px;
+  }
