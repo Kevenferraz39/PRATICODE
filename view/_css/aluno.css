@@ -8,7 +8,7 @@
 }
 /*----------barra scroll---------------*/
 .conteudo-tabela::-webkit-scrollbar {
-    width: 10px;
+    width: 10px; 
   }
   .conteudo-tabela::-webkit-scrollbar-track {
     background: #f1f1f100; 
@@ -28,7 +28,6 @@
   /*----------barra scroll---------------*/
 table{
     background-color: blue;
-    padding: 10px;
     border-style: none;
     width: 95%;
 }
@@ -50,5 +49,10 @@ td{
   border-radius: 5px;
   font-size: 18px;
   font-weight: bolder;
-  margin-right: 100px;
+  margin-right: 150px;
+
+}
+.bt:hover{
+  color:white; 
+  background-color:rgb(123, 12, 12);
 }
