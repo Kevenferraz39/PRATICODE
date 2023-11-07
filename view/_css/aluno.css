@@ -26,22 +26,33 @@
     border-radius: 10px;
   }
   /*----------barra scroll---------------*/
+
+.top {
+    display:fixed;
+    margin-bottom: 2px;
+}
+h3{
+  color: rgb(170, 17, 17);
+}
 table{
-    background-color: blue;
-    border-style: none;
+    background-color: rgb(32, 32, 32);
     width: 95%;
+    border-width: 5px;
+    border-radius: 5px;
 }
 tr{
-    background-color: aliceblue;
-    padding: 10px;
+    background-color: rgb(170, 17, 17);
+    font-size: 18px;
 }
 td{
-    background-color: yellow;
+    background-color:rgb(51, 51, 51);
+    padding: 5px;
+    font-size: 18px;
+    color: black;
 }
-.top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2px;
+td:hover{
+  background-color: rgba(170, 17, 17, 0.568);
+  font-weight: bolder;
 }
 .bt{
   background-color: rgb(170, 17, 17);
