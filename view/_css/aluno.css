@@ -44,3 +44,11 @@ td{
     align-items: center;
     margin-bottom: 2px;
 }
+.bt{
+  background-color: rgb(170, 17, 17);
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-right: 100px;
+}
