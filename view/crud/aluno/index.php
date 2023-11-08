@@ -99,8 +99,12 @@
     <center>
         <div class="conteudo-tabela">
         <div class="top">
+<<<<<<< HEAD
         <img src="../../_img/Logo-SemFundo.png">
                     <h3>Usuarios cadastrados</h3>
+=======
+        <img src="../../_img/Logo-SemFundo.png" x="0px" y="0px" viewBox="0 0 48 48" width="80" height="80">
+>>>>>>> f744836f84432f2360117908296e47e1e0867f60
                 
         </div>
            <table>
@@ -124,7 +128,7 @@
                         <td> <?= $dados['pontos'] ?> </td>
                         <td> <a href="<?= "editar.php?id=$dados[idAluno]"; ?>Editar</a> <a href="<?= "excluir.php?id=$dados[idAluno]"; ?>Excluir</a> </td>
                     </tr>
-                    <?php } ?>
+                    <?php } ?> 
                 </tbody>
             </table>
         </div>
