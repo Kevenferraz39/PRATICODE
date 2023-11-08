@@ -1,10 +1,10 @@
 .conteudo-tabela{
-    background-color: rgb(49, 49, 49);
+    background-color: rgba(255, 255, 255, 0.487);
     padding: 5px;
     height: 250px;
     width: 600px;
     overflow-y:scroll;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
 }
 /*----------barra scroll---------------*/
 .conteudo-tabela::-webkit-scrollbar {
@@ -28,42 +28,75 @@
   /*----------barra scroll---------------*/
 
 .top {
-    display:fixed;
-    margin-bottom: 2px;
+    display:flex;
+    margin: 0;
+    height: 70px;
+}
+img{
+  margin-left: 8px;
+  margin-top: -20px;
+  width:120px; 
+  height:120px;
 }
 h3{
-  color: rgb(170, 17, 17);
+  margin-top: 25px;
+  font-size: 20px;
+  color: rgb(34, 33, 33);
 }
 table{
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(34, 33, 33);
     width: 95%;
-    border-width: 5px;
+    border-width: 9px;
     border-radius: 5px;
 }
+table a:hover{
+color: white;
+}
 tr{
-    background-color: rgb(170, 17, 17);
+    background-color: rgb(34, 33, 33);
     font-size: 18px;
+    padding: 8px;
+    color:rgba(255, 255, 255, 0.83);
+
 }
 td{
-    background-color:rgb(51, 51, 51);
+    background-color:rgb(37, 37, 37);
+    color: white;
     padding: 5px;
     font-size: 18px;
     color: black;
 }
 td:hover{
-  background-color: rgba(170, 17, 17, 0.568);
+  background-color: rgba(170, 17, 17, 0.215);
   font-weight: bolder;
+}
+#roda-pe-lista{
+  background-color: rgba(255, 255, 255, 0.487);
+  width: 600px;
+  height: 50px;
+  border-radius: 0px 0px 10px 10px;
 }
 .bt{
   background-color: rgb(170, 17, 17);
-  padding: 5px;
-  border-radius: 5px;
+  padding: 8px;
+  border-radius: 3px;
   font-size: 18px;
   font-weight: bolder;
   margin-right: 150px;
-
 }
 .bt:hover{
   color:white; 
-  background-color:rgb(123, 12, 12);
+  background-color:rgb(13, 13, 13);
+}
+.btv{
+  background-color: rgb(170, 17, 17);
+  padding: 8px;
+  font-size: 18px;
+  font-weight: bolder;
+  margin-right: 120px;
+
+}
+.btv:hover{
+  color:white; 
+  background-color:rgb(13, 13, 13);
 }

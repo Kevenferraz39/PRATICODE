@@ -23,8 +23,8 @@
     <img src="../../_img/Logo-SemFundo.png" alt="foto" id="logo"/></a>
         <div class="link">
             <li class="focus"><b><a href="../../Menu.html">Aluno</a></b></li>
-            <li class="linke"><b><a href="../../faleConosco.html">Fale conosco</a></b></li>
-            <li class="linke"><b><a href="../../Desenvolvedores.html">Desenvolvedores</a></b></li>
+            <li class="linke"><b><a href="../../controller/login/sair.php">Sair</a></b></li>
+            <li class="linke"><b><a href="../../view/crud/index.html">CRUD</a></b></li>
         <!-- Projetos botão dropdown -->
             <div class="dropdown">
                 <button class="dropbtn" onclick="myFunction()">Exercicios</button>
@@ -99,13 +99,13 @@
     <center>
         <div class="conteudo-tabela">
         <div class="top">
-        <img src="../../_img/Logo-SemFundo.png"width="80" height="80">
+        <img src="../../_img/Logo-SemFundo.png">
+                    <h3>Usuarios cadastrados</h3>
                 
-                </svg><h3>Usuarios cadastrados</h3>
         </div>
            <table>
                 <thead>
-                    <tr>
+                    <tr bordercolor="#a80a0a">
                         <th>ID</th>
                         <th>Nome</th>
                         <th>Email</th>
@@ -122,14 +122,16 @@
                         <td> <?= $dados['email'] ?> </td>
                         <td> <?= $dados['senha'] ?> </td>
                         <td> <?= $dados['pontos'] ?> </td>
-                        <td> <a href="<?= "editar.php?id=$dados[idAluno]"; ?>">Editar</a> <a href="<?= "excluir.php?id=$dados[idAluno]"; ?>">Excluir</a> </td>
+                        <td> <a href="<?= "editar.php?id=$dados[idAluno]"; ?>Editar</a> <a href="<?= "excluir.php?id=$dados[idAluno]"; ?>Excluir</a> </td>
                     </tr>
                     <?php } ?>
                 </tbody>
             </table>
-        </div><br>
-        <a href="cadastrar.php" class="bt">Cadastrar Novo Aluno</a>
-        <a href="../../index.html" class="bt">Voltar</a>
+        </div>
+        <div id="roda-pe-lista"><br>
+            <a href="../../index.html" class="btv">Voltar</a>
+            <a href="cadastrar.php" class="bt">Cadastrar Novo Aluno</a>
+        </div>
     </center>
         <!--Start of Tawk.to Script-->
         <script src="JS/chat.js"></script>
@@ -145,9 +147,6 @@
                     <a href="#">
                         <img src="../../_img/LogoBrancaSemFundo.png" alt="logo">
                     </a>
-                </section>
-                
-                </section>
                         <!-- More sections -->            
             </div>
             <div class="footer-bottom">
