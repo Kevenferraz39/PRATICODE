@@ -18,78 +18,13 @@
 </head> 
 <body>
      <!-- Menu -->
-<header class="Home">    
+     <header class="Home">  
     <a href="Menu.html">
     <img src="../../_img/Logo-SemFundo.png" alt="foto" id="logo"/></a>
         <div class="link">
             <li class="focus"><b><a href="../../Menu.html">Aluno</a></b></li>
-            <li class="linke"><b><a href="../../controller/login/sair.php">Sair</a></b></li>
-            <li class="linke"><b><a href="../../view/crud/index.html">CRUD</a></b></li>
-        <!-- Projetos botão dropdown -->
-            <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">Exercicios</button>
-                <div class="dropdown-content" id="myDropdown">
-                    <a href="../../exercicios.php"><b>Exercicios</b></a>
-                    <a href="../../perguntasHTML.html"><b>HTML</b></a>
-                    <a href="../../perguntasCSS.html"><b>CSS</b></a>
-                </div> 
-            </div> 
-        <!-- final do botão dropdown --> 
-        <!--script do dropdown-->
-        <script>
-            //Quando o usuário clicar no botão, alterne entre ocultar e mostrar o conteúdo do menu suspenso
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            //Feche o menu suspenso se o usuário clicar fora dele
-            window.onclick = function(e) {
-              if (!e.target.matches('.dropbtn')) {
-              var myDropdown = document.getElementById("myDropdown");
-                if (myDropdown.classList.contains('show')) {
-                  myDropdown.classList.remove('show');
-                }
-              }
-            }
-        </script>
-        <!--script do dropdown-->
-            <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
-            <div id="id01" class="modal">
-                <form class="modal-content animate" method="post" action="../../controller/login/login.php">
-                    <div class="container">
-                    <label for="uname"><b>Usuário</b></label>
-                    <input type="text" placeholder="Entre com o seu usuário" name="email" required>
-
-                    <label for="psw"><b>Senha</b></label>
-                    <input type="password" placeholder="Entre com a sua senha" name="senha" required>
-                        
-                    <button type="submit" id="but">Login</button>
-                    <button id="but"><a href="Cadastro.html">Cadastre-se</a></button>
-                    <label>
-                        <input type="checkbox" checked="checked" name="remember"> Lembre-me
-                    </label>
-                    </div>
-
-                    <div class="container" style="background-color:#fdfdfd00">
-                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-                    <span class="psw"><a href="#">Esqueceu a sua senha ?</a></span>
-                    </div>
-                </form>
-            </div>
-        
-                <!--script do menu-->
-                <script>
-                    // Get the modal
-                    var modal = document.getElementById('id01');
-
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                </script>
-                <!--script do menu-->
+            <li class="linke"><b><a href="../index.html">CRUD</a></b></li>
+            <li class="linke"><b><a href="../../controller/login/sair.php">Sair</a></b></li>         
         </div>
 </header>
     <!-- fim do Menu -->
@@ -97,44 +32,39 @@
     <br><br><br><br><br>
 <div class="content">
     <center>
-        <div class="conteudo-tabela">
-        <div class="top">
-<<<<<<< HEAD
-        <img src="../../_img/Logo-SemFundo.png">
-                    <h3>Usuarios cadastrados</h3>
-=======
-        <img src="../../_img/Logo-SemFundo.png" x="0px" y="0px" viewBox="0 0 48 48" width="80" height="80">
->>>>>>> f744836f84432f2360117908296e47e1e0867f60
-                
-        </div>
-           <table>
-                <thead>
-                    <tr bordercolor="#a80a0a">
-                        <th>ID</th>
-                        <th>Nome</th>
-                        <th>Email</th>
-                        <th>Senha</th>
-                        <th>Pontos</th>
-                        <th>...</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php while ($dados = mysqli_fetch_assoc($resultado)) { ?>
-                    <tr>
-                        <td> <?= $dados['idAluno'] ?> </td>
-                        <td> <?= $dados['nome'] ?> </td>
-                        <td> <?= $dados['email'] ?> </td>
-                        <td> <?= $dados['senha'] ?> </td>
-                        <td> <?= $dados['pontos'] ?> </td>
-                        <td> <a href="<?= "editar.php?id=$dados[idAluno]"; ?>Editar</a> <a href="<?= "excluir.php?id=$dados[idAluno]"; ?>Excluir</a> </td>
-                    </tr>
-                    <?php } ?> 
-                </tbody>
-            </table>
-        </div>
-        <div id="roda-pe-lista"><br>
-            <a href="../../index.html" class="btv">Voltar</a>
-            <a href="cadastrar.php" class="bt">Cadastrar Novo Aluno</a>
+        <div id="container-conteudo-tabela">
+            <div class="top">
+                    <img src="../../_img/Logo-SemFundo.png">
+                    <h3>Usuarios cadastrados</h3>     
+            </div>
+            <div class="conteudo-tabela">
+            <table>
+                    <thead>
+                        <tr bordercolor="#a80a0a">
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Email</th>
+                            <th>Senha</th>
+                            <th>Pontos</th>
+                            <th>...</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <?php while ($dados = mysqli_fetch_assoc($resultado)) { ?>
+                        <tr>
+                            <td> <?= $dados['idAluno'] ?> </td>
+                            <td> <?= $dados['nome'] ?> </td>
+                            <td> <?= $dados['email'] ?> </td>
+                            <td> <?= $dados['senha'] ?> </td>
+                            <td> <?= $dados['pontos'] ?> </td>
+                            <td> <a href="<?= "editar.php?id=$dados[idAluno]"; ?>Editar</a> <a href="<?= "excluir.php?id=$dados[idAluno]"; ?>Excluir</a> </td>
+                        </tr>
+                        <?php } ?> 
+                    </tbody>
+                </table>
+            </div><br><br>
+                <a href="../index.html" class="btv">Voltar</a>
+                <a href="cadastrar.php" class="bt">Cadastrar Novo Aluno</a>
         </div>
     </center>
         <!--Start of Tawk.to Script-->
