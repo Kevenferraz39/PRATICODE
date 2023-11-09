@@ -1,36 +1,13 @@
-.conteudo-tabela{
-    background-color: rgba(255, 255, 255, 0.487);
-    padding: 5px;
-    height: 250px;
-    width: 600px;
-    overflow-y:scroll;
-    border-radius: 10px 10px 0px 0px;
+#container-conteudo-tabela{
+  background-color: rgba(255, 255, 255, 0.487);
+  height: 400px;
+  width: 750px;
+  border-radius: 10px;
 }
-/*----------barra scroll---------------*/
-.conteudo-tabela::-webkit-scrollbar {
-    width: 10px; 
-  }
-  .conteudo-tabela::-webkit-scrollbar-track {
-    background: #f1f1f100; 
-  }
-   
-  /* Handle */
-  .conteudo-tabela::-webkit-scrollbar-thumb {
-    background: #888; 
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  .conteudo-tabela::-webkit-scrollbar-thumb:hover {
-    background: rgb(170, 17, 17); 
-    border-radius: 10px;
-  }
-  /*----------barra scroll---------------*/
-
 .top {
-    display:flex;
-    margin: 0;
-    height: 70px;
+  display:flex;
+  margin: 0;
+  height: 70px;
 }
 img{
   margin-left: 8px;
@@ -43,9 +20,37 @@ h3{
   font-size: 20px;
   color: rgb(34, 33, 33);
 }
+.conteudo-tabela{
+    background-color: rgba(255, 255, 255, 0.041);
+    padding: 5px;
+    height: 250px;
+    width: 700px;
+    overflow-y:scroll;
+    border-radius:0;
+}
+/*----------barra scroll---------------*/
+.conteudo-tabela::-webkit-scrollbar {
+    width: 10px; 
+  }
+  .conteudo-tabela::-webkit-scrollbar-track {
+    background: #0a0a0a70; 
+  }
+   
+  /* Handle */
+  .conteudo-tabela::-webkit-scrollbar-thumb {
+    background: rgb(80, 11, 11); 
+    border-radius: 10px;
+  }
+   
+  /* Handle on hover */
+  .conteudo-tabela::-webkit-scrollbar-thumb:hover {
+    background: rgb(170, 17, 17); 
+    border-radius: 10px;
+  }
+  /*----------barra scroll---------------*/
 table{
     background-color: rgb(34, 33, 33);
-    width: 95%;
+    width: 100%;
     border-width: 9px;
     border-radius: 5px;
 }
@@ -57,25 +62,19 @@ tr{
     font-size: 18px;
     padding: 8px;
     color:rgba(255, 255, 255, 0.83);
-
 }
 td{
     background-color:rgb(37, 37, 37);
     color: white;
     padding: 5px;
-    font-size: 18px;
-    color: black;
+    font-size: 13px;
+    text-align: center;
 }
 td:hover{
   background-color: rgba(170, 17, 17, 0.215);
   font-weight: bolder;
 }
-#roda-pe-lista{
-  background-color: rgba(255, 255, 255, 0.487);
-  width: 600px;
-  height: 50px;
-  border-radius: 0px 0px 10px 10px;
-}
+
 .bt{
   background-color: rgb(170, 17, 17);
   padding: 8px;
