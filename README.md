@@ -6,7 +6,7 @@
 
 Esse site esta sendo desenvolvido para que os aulunos da ETC estudem e pratiquem HTML5 e CSS3
 
-![Resultado final do projeto](site.jpeg)
+![Resultado final do projeto](view/_img/Menu-Prati.png)
 
 <h4 align="center">
  <a href="https://praticode.com">Clique para visitar o projeto</a>
