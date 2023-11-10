@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
     <!-- css -->
-    <link rel="stylesheet" href="_css/Menu.css">
-    <link rel="stylesheet" href="_css/footer.css">
-    <link rel="stylesheet" href="_css/faleConosco.css">
-    <link rel="stylesheet" href="_css/Login.css">   
+        <link rel="stylesheet" href="_css/Menu.css">
+        <link rel="stylesheet" href="_css/footer.css">
+        <link rel="stylesheet" href="_css/faleConosco.css">
+        <link rel="stylesheet" href="_css/Login.css">   
     <!-- fim-css -->
-        <!--Start of Tawk.to Script-->
-        <script src="JS/chat.js"></script>
-        <!--End of Tawk.to Script-->
+
+        <!--Script-->    
+            <!--Start of Tawk.to Script-->
+            <script src="JS/chat.js"></script>
+            <!--script do dropdown-->
+            <script src="JS/dropdown.js"></script>
+            <!--script do menu-->
+            <script src="JS/login.js"></script>
+        <!--Script-->
+ 
     <link rel="shortcut icon" href="_img/logo.png" type="image/x-icon">
     <title>Faleconosco</title> 
 </head>
@@ -34,23 +42,6 @@
                     <a href="perguntasCSS.html"><b>CSS</b></a>
                 </div>
             </div> 
-            <script>
-                /* Quando o usuário clicar no botão, alterne entre ocultar e mostrar o conteúdo do menu suspenso*/
-                function myFunction() {
-                  document.getElementById("myDropdown").classList.toggle("show");
-                }
-                
-                //Feche o menu suspenso se o usuário clicar fora dele
-                window.onclick = function(e) {
-                  if (!e.target.matches('.dropbtn')) {
-                  var myDropdown = document.getElementById("myDropdown");
-                    if (myDropdown.classList.contains('show')) {
-                      myDropdown.classList.remove('show');
-                    }
-                  }
-                }
-            </script>
-        <!-- final do botão dropdown -->
         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
         <div id="id01" class="modal">
             <form class="modal-content animate"action="#" method="POST">
@@ -74,19 +65,6 @@
                 </div>
             </form>
         </div>
-                <!--script do menu-->
-                <script>
-                    // Get the modal
-                    var modal = document.getElementById('id01');
-
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                </script>
-                <!--script do menu-->
             </div>
         </div>
 </header>
@@ -105,18 +83,6 @@
         </div><br>
         <div class="git">
             <img src="_img/github-logo-removebg-preview.png" alt="imagem">
-            <ul>
-                <li><a href="">@praticode</a></li>
-            </ul>
-        </div><br>
-        <div class="tiktok">
-            <img src="_img/tiktok-removebg-preview.png" alt="imagem">
-            <ul>
-                <li><a href="">@praticode</a></li>
-            </ul>
-        </div><br>
-        <div class="linkedin">
-            <img src="_img/icons8-linkedin-48.png" alt="imagem">
             <ul>
                 <li><a href="">@praticode</a></li>
             </ul>
