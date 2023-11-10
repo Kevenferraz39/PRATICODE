@@ -9,7 +9,7 @@ Esse site esta sendo desenvolvido para que os aulunos da ETC estudem e pratiquem
 ![Resultado final do projeto](view/_img/Menu-Prati.png)
 
 <h4 align="center">
- <a href="https://praticode.com">Clique para visitar o projeto</a>
+ <a href="https://praticode.com" id="btn">Clique para visitar o projeto</a>
 </h4>
 
 ## 📚 Seções
