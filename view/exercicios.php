@@ -14,12 +14,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!-- css -->
-    <link rel="stylesheet" href="_css/Menu.css">
-    <link rel="stylesheet" href="_css/footer.css">
-    <link rel="stylesheet" href="_css/exercicios.css">
-    <link rel="stylesheet" href="_css/Login.css">
+        <link rel="stylesheet" href="_css/Menu.css">
+        <link rel="stylesheet" href="_css/footer.css">
+        <link rel="stylesheet" href="_css/exercicios.css">
+        <link rel="stylesheet" href="_css/Login.css">
     <!-- fim-css -->
+
+        <!--Script-->
+            <!--script do dropdown-->
+            <script src="JS/dropdown.js"></script>
+            <!--script do menu-->
+            <script src="JS/login.js"></script>
+        <!--Script-->
+ 
     <link rel="shortcut icon" href="_img/logo.png" type="image/x-icon">
     <title>Exercicios</title> 
 </head>
@@ -41,23 +50,7 @@
                     <a href="perguntasHTML.html"><b>HTML</b></a>
                     <a href="perguntasCSS.html"><b>CSS</b></a>
                 </div>
-            </div> 
-            <script>
-                /* Quando o usuário clicar no botão, alterne entre ocultar e mostrar o conteúdo do menu suspenso*/
-                function myFunction() {
-                  document.getElementById("myDropdown").classList.toggle("show");
-                }
-                
-                //Feche o menu suspenso se o usuário clicar fora dele
-                window.onclick = function(e) {
-                  if (!e.target.matches('.dropbtn')) {
-                  var myDropdown = document.getElementById("myDropdown");
-                    if (myDropdown.classList.contains('show')) {
-                      myDropdown.classList.remove('show');
-                    }
-                  }
-                }
-            </script>
+            </div>
         <!-- final do botão dropdown -->
         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
         <div id="id01" class="modal">
@@ -82,19 +75,6 @@
                 </div>
             </form>
         </div>
-                <!--script do menu-->
-                <script>
-                    // Get the modal
-                    var modal = document.getElementById('id01');
-
-                    // When the user clicks anywhere outside of the modal, close it
-                    window.onclick = function(event) {
-                        if (event.target == modal) {
-                            modal.style.display = "none";
-                        }
-                    }
-                </script>
-                <!--script do menu-->
         </div>
     </div>
 </header>
