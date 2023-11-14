@@ -16,14 +16,21 @@
         if (mysqli_num_rows($result) < 1) {
             unset($_SESSION['email']);
             unset($_SESSION['senha']);
-            header('Location: ../../view/menu.html');
+            header('Location: ../../view/menu.php');
         } else {
+            include_once('../../config/loginAdm.php');
+
             $_SESSION['email'] = $email;
             $_SESSION['senha'] = $senha;
-            header('Location: ../../view/exercicios.php');
+
+            if (($_SESSION['email'] == $emailAdm) && ($_SESSION['senha'] == $senhaAdm)) {
+                header('Location: ../../view/crud/');
+            } else {
+                header('Location: ../../view/menu.php');
+            }
        }
 
     } else {
-        header('Location: ../../view/menu.html');
+        header('Location: ../../view/menu.php');
     }
 ?>

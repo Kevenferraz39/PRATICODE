@@ -2,5 +2,5 @@
     session_start();
     unset($_SESSION['email']);
     unset($_SESSION['senha']);
-    header('Location: ../../view/menu.html');
+    header('Location: ../../view/menu.php');
 ?>

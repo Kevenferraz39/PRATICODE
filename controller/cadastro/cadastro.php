@@ -15,7 +15,7 @@
             $sqlInsert = "INSERT INTO aluno(nome, email, senha) VALUES ('$nome', '$email', '$senha')";
             $result = $conexao->query($sqlInsert);
 
-            header('Location: ../../view/menu.html');
+            header('Location: ../../view/menu.php');
         } else {
             echo "Senha incorreta";
         }
