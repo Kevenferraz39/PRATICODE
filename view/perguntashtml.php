@@ -1,3 +1,12 @@
+<?php 
+    session_start();
+    
+    if (!isset($_SESSION['email']) and !isset($_SESSION['senha'])) {
+        header('Location: menu.php');
+    }
+    $logado = $_SESSION['email'];
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head> 
@@ -13,6 +22,7 @@
 
         <!--script do dropdown-->
         <script src="JS/dropdown.js"></script>
+        <script src="JS/dropdownConta.js"></script>
         
     <link rel="shortcut icon" href="_img/logo.png" type="image/x-icon">
     <title>Perguntas de HTML</title> 
@@ -23,19 +33,26 @@
     <a href="Menu.html">
     <img src="_img/Logo-SemFundo.png" alt="foto" id="logo"/></a>
         <div class="link">
-            <li class="linke"><b><a href="Menu.html">Home</a></b></li>
+            <li class="linke"><b><a href="menu.php">Home</a></b></li>
             <li class="focus"><b><a href="#">HTML</a></b></li>
-            <li class="linke"><b><a href="faleConosco.html">Fale conosco</a></b></li>
-            <li class="linke"><b><a href="Desenvolvedores.html">Desenvolvedores</a></b></li>
+            <li class="linke"><b><a href="faleConosco.php">Fale conosco</a></b></li>
+            <li class="linke"><b><a href="desenvolvedores.php">Desenvolvedores</a></b></li>
         <!-- Projetos botão dropdown -->
             <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">Exercicios</button>
+                <button class="dropbtn" onclick="abrirDropdown()">Exercicios</button>
                 <div class="dropdown-content" id="myDropdown">
                     <a href="exercicios.php"><b>Exercicios</b></a>
-                    <a href="perguntasHTML.html"><b>HTML</b></a>
-                    <a href="perguntasCSS.html"><b>CSS</b></a>
+                    <a href="perguntashtml.php"><b>HTML</b></a>
+                    <a href="perguntascss.php"><b>CSS</b></a>
                 </div>
-            </div> 
+            </div>
+            <div class="dropdownConta">
+                <button class="btnConta" onclick="abrirDropdownConta()">Conta</button>
+                <div class="dropdown-conta-content" id="dropdownConta">
+                    <a href="configConta.php">Configurações</a>
+                    <a href="../controller/login/sair.php">Sair</a>
+                </div>
+            </div>
         <!-- final do botão dropdown -->
         </div>
 </header>

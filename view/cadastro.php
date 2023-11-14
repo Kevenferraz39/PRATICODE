@@ -1,6 +1,12 @@
+<?php 
+     session_start();
+    
+     if (isset($_SESSION['email']) and isset($_SESSION['senha'])) {
+         header('Location: menu.php');
+     }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
-//oi
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +23,7 @@
 
 <body>
     <header class="Home">
-        <a href="Menu.html"><img src="_img/Logo-SemFundo.png" alt="foto" id="logo"></a>
+        <a href="menu.php"><img src="_img/Logo-SemFundo.png" alt="foto" id="logo"></a>
 
 
         <center>
@@ -37,9 +43,7 @@
                     <input class="fonte" type="password" name="senhaConf" placeholder="Confirme a sua senha..."
                         required><br><br>
                     <input type="submit" value="Cadastrar" id="btn-cadastrar"><br><br>
-                    <a href="Menu.html" id="btn-voltar">Cancel</a>
-                    
-
+                    <a href="menu.php" id="btn-voltar">Cancelar</a>
                 </form>
             </div>
         </center>

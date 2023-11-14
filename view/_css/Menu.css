@@ -119,13 +119,13 @@ a:hover{
 
 /*--------------------------------------------------------Botão exercicios dropdown---------------------------------------------------------------------------------------*/
 
-.dropdown {
+.dropdown, .dropdownConta{
     float: right; /*serve para que o drop flutue no lado direito*/
     overflow: hidden; /*isso faz com que tudo que transborde o tamanho maximo da tela o codigo morre*/
     margin-right: 1px; /* definição da margin direita*/
   }
   
-  .dropdown .dropbtn{
+  .dropdown .dropbtn, .dropdownConta .btnConta{
     cursor: pointer; /*ao passar o cursor sobre o drop o cursor se tornarar pointer*/
     font-size: 16px; /*define o tamanho da font*/ 
     border: none; /* define que o estilo da borda sera none*/
@@ -138,11 +138,14 @@ a:hover{
     font-weight:bold; /* isso deixa as letras em negrito*/ 
   }
   
-  .dropdown:hover .dropbtn, .dropbtn:focus {/*quando pasar o mouse sobre os itens vai alterar a formatacao original */
+  .dropdown:hover .dropbtn,
+  .dropdownConta:hover .btnConta,
+  .dropbtn:focus, 
+  .btnConta:focus {/*quando pasar o mouse sobre os itens vai alterar a formatacao original */
    color:var(--box-shadow-menu); /*definicao de cor do texto*/
   }
   
-  .dropdown-content {
+  .dropdown-content, .dropdown-conta-content {
     display: none; /*display:none retira o elemento do layout da página*/
     position: absolute; /*define a posicao do item como absoluta*/
     top: 65px; /*define a margin do topo do item*/
@@ -151,7 +154,7 @@ a:hover{
     z-index: 1; /*A propriedade Z-index especifica a ordem da pilha de um elemento do anúncio*/
   }
   
-  .dropdown-content a {
+  .dropdown-content a, .dropdown-conta-content a {
     float: none; /* define que o float sera none*/
     color: var(--font-color); /*definicao de cor do texto*/
     padding: 10px; /*isso define que o espaço interno tera 10px em todas as bordas*/
@@ -160,16 +163,24 @@ a:hover{
     text-align: left; /*define qu eo alinhamento dos texto sera a esquerda*/
   }
   
-  .dropdown-content a:hover {/*quando pasar o mouse sobre os itens vai alterar a formatacao original */
+  .dropdown-content a:hover,
+  .dropdown-conta-content a:hover {/*quando pasar o mouse sobre os itens vai alterar a formatacao original */
     color:var(--box-shadow-menu); /*definicao de cor do texto*/
   }
   
   .show{
-    margin-top:-30px; /*isso diminui a distancia da do item com o topo da pagina*/
+    margin-top:6px; /*isso diminui a distancia da do item com o topo da pagina*/
     display: block; /*podemos organizar os elementos lado a lado e definirmos as propriedades de largura e altura, pois elas não serão ignoradas pelo navegador*/
+    margin-left: 1px; /* definição da margin direita*/
+  }
+  .Show{
+    margin-top:9px; /*isso diminui a distancia da do item com o topo da pagina*/
+    display: block; /*podemos organizar os elementos lado a lado e definirmos as propriedades de largura e altura, pois elas não serão ignoradas pelo navegador*/
+    margin-left: -200px; /* definição da margin direita*/
+    height: 300px;
+    width: 300px;
   }
 /*-----------------------------------------------------Fim da formatação do botao exercicios dropdown------------------------------------------------------------------------*/
-
 /*-----------------------------------------------------Fim da formatação do header-------------------------------------------------------------------------------------------*/
 
 
