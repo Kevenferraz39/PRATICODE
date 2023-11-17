@@ -4,7 +4,7 @@
 
 
 <h1 align="center">
- <img src="_img/Logo-SemFundo.png" width="80px;" alt="Logo"/><br>Praticode
+ <img src="view/_img/Logo-SemFundo.png" width="80px;" alt="Logo"/><br>Praticode
 </h1>
 
 ![Resultado final do projeto](site.jpeg)
@@ -49,60 +49,39 @@ Para desenvolvimento deste site utilizamos algumas plataformas que nos auxiliara
   <tr>
     <td align="center">
       <a href="https://github.com/Kevenferraz39">
-          <img src="_img/eu.jpeg" width="100px;" alt="Foto do Keven Ferraz"/><br>
+          <img src="view/_img/eu.jpeg" width="100px;" alt="Foto do Keven Ferraz"/><br>
         <sub>
           <b>Keven Ferraz</b>
         </sub>
       </a>
     </td>
-  </tr>
-</table>
-
-
-<table>
-  <tr>
     <td align="center">
       <a href="https://github.com/nathannolacio">
-          <img src="_img/nathan.jpeg" width="100px;" alt="Foto do Nathan "/><br>
+          <img src="view/_img/nathan.jpeg" width="100px;" alt="Foto do Nathan "/><br>
         <sub>
           <b>Nathan Nolacio</b>
         </sub>
       </a>
     </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
     <td align="center">
       <a href="https://github.com/RayzaDSbr">
-          <img src="_img/Rayza.jpeg" width="100px;" alt="Foto do Rayza"/><br>
+          <img src="view/_img/Rayza.jpeg" width="100px;" alt="Foto do Rayza"/><br>
         <sub>
           <b>Rayza Gomes</b>
         </sub>
       </a>
     </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
     <td align="center">
       <a href="https://github.com/.....">
-          <img src="_img/julia.jpeg" width="100px;" alt="Foto do Julia"/><br>
+          <img src="view/_img/julia.jpeg" width="100px;" alt="Foto do Julia"/><br>
         <sub>
           <b>Julia Martins</b>
         </sub>
       </a>
     </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
     <td align="center">
       <a href="https://github.com/HeitorBiazon">
-          <img src="_img/heitor.jpeg" width="100px;" alt="Foto do Heitor"/><br>
+          <img src="view/_img/heitor.jpeg" width="100px;" alt="Foto do Heitor"/><br>
         <sub>
           <b>Heitor Biazon</b>
         </sub>
