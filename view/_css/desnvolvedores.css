@@ -108,7 +108,7 @@ p{
 .fotos{
     width: 90%;
     height: 150px;
-    margin-top: 300px;
+    margin-top: 380px;
     margin-bottom: 0;
 }
 .fotos .foto{
@@ -123,9 +123,6 @@ p{
     width: 150px;
     height: 150px;
     border-radius: 100%;
-}
-footer{
-    top:50px;
 }
 
 /*--------------------------------------------------------FORMATAÇÃO DE RESPONSIVIDADE---------------------------------------------------------------------------------------*/

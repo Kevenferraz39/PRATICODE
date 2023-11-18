@@ -1,12 +1,14 @@
-<?php
-    session_start();
-    if (isset($_SESSION['email']) && isset($_SESSION['senha'])) {
-        if ($_SESSION['email'] != "codeprati@gmail.com" && $_SESSION['senha'] != "Praticode@2023") {
-            header("Location: ../menu.php");
-        }
-    } else {
-        header("Location: ../menu.php");
-    }
+<?php 
+    include_once('../../controller/login/verificarSessao.php');
+    // include_once('../../config/loginAdm.php');
+
+    // if (isset($_SESSION['email']) && isset($_SESSION['senha'])) {
+    //     if ($_SESSION['email'] != "codeprati@gmail.com" && $_SESSION['senha'] != "Praticode@2023") {
+    //         header("Location: ../menu.php");
+    //    }
+    // } else {
+    //     header("Location: ../menu.php");
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -33,12 +35,12 @@
                 <li class="linke"><b><a href="../menu.php">Home</a></b></li>
                 <li class="linke"><b><a href="faleConosco.php">Fale conosco</a></b></li>
                 <li class="linke"><b><a href="desenvolvedores.php">Desenvolvedores</a></b></li>
-                <div class="dropdown"> 
+                <div class="dropdown">
                     <button class="dropbtn" onclick="abrirDropdown()">Exercicios</button>
                     <div class="dropdown-content" id="myDropdown">
-                        <a href="exercicios.php"><b>Exercicios</b></a>
-                        <a href="perguntashtml.php"><b>HTML</b></a>
-                        <a href="perguntascss.php"><b>CSS</b></a>
+                        <a href="../exercicios.php"><b>Exercicios</b></a>
+                        <a href="../perguntashtml.php"><b>HTML</b></a>
+                        <a href="../perguntascss.php"><b>CSS</b></a>
                     </div> 
                 </div>
                 <li class="focus"><b><a href="../../view/crud/">CRUD</a></b></li>
@@ -46,7 +48,7 @@
                     <button class="btnConta" onclick="abrirDropdownConta()">Conta</button>
                     <div class="dropdown-conta-content" id="dropdownConta">
                         <a href="configConta.php">Configurações</a>
-                        <a href="../controller/login/sair.php">Sair</a>
+                        <a href="../../controller/login/sair.php">Sair</a>
                     </div>
                 </div>
             </div>

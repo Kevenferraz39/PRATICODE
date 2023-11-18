@@ -7,7 +7,7 @@
  <img src="view/_img/Logo-SemFundo.png" width="80px;" alt="Logo"/><br>Praticode
 </h1>
 
-![Resultado final do projeto](site.jpeg)
+![Resultado final do projeto](view/_img/site.png)
 
 <h4 align="center"><a href="https://praticode.com">Clique para visitar o projeto</a></h4>
 

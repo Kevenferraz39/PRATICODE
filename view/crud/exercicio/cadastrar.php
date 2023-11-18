@@ -1,3 +1,7 @@
+<?php 
+    include_once('../../../controller/login/verificarSessao.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

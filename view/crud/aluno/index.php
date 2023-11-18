@@ -1,4 +1,5 @@
-<?php 
+<?php
+    include_once('../../../controller/login/verificarSessao.php');
     include_once('../../../controller/crud/aluno/consultar.php');
 ?>
 <!DOCTYPE html>
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="../../_css/Menu.css">
     <link rel="stylesheet" href="../../_css/footer.css"> 
     <link rel="stylesheet" href="../../_css/Login.css">
-    <link rel="stylesheet" href="../../_css/aluno.css">
+    <link rel="stylesheet" href="../../_css/tabelasCrud.css">
     <!-- fim-css -->
     <link rel="shortcut icon" href="../../_img/logo.png" type="image/x-icon">
     <title>Aluno</title> 
@@ -64,7 +65,7 @@
                             <td> <?= $dados['email'] ?> </td>
                             <td> <?= $dados['senha'] ?> </td>
                             <td> <?= $dados['pontos'] ?> </td>
-                            <td> <a href="<?= "editar.php?id=$dados[idAluno]"; ?>Editar</a> <a href="<?= "excluir.php?id=$dados[idAluno]"; ?>Excluir</a> </td>
+                            <td> <a href="<?= "editar.php?id=$dados[idAluno]"; ?>">Editar</a> <a href="<?= "excluir.php?id=$dados[idAluno]"; ?>">Excluir </a> </td>
                         </tr>
                         <?php } ?> 
                     </tbody>

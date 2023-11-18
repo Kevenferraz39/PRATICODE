@@ -1,14 +1,21 @@
 //Quando o usuário clicar no botão, alterne entre ocultar e mostrar o conteúdo do menu suspenso
 function abrirDropdownConta() {
-    document.getElementById("dropdownConta").classList.toggle("Show");
+    var dropdownConta = document.getElementById("dropdownConta");
+
+    if (dropdownConta.style.display === "" || dropdownConta.style.display === "none") {
+      dropdownConta.style.display = "block";
+    } else {
+      dropdownConta.style.display = "none";
   }
+}
   
   //Feche o menu suspenso se o usuário clicar fora dele
-  window.onclick = function(e) {
-    if (!e.target.matches('.btnConta')) {
-    var myDropdown = document.getElementById("dropdownConta");
-      if (myDropdown.classList.contains('Show')) {
-        myDropdown.classList.remove('Show');
-      }
+  document.addEventListener("click", function(event) {
+    var dropdowns = document.getElementsByClassName("dropdownConta");
+    for (var i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i].querySelector("#dropdownConta");
+        if (openDropdown.style.display === "block" && !event.target.closest('.dropdownConta')) {
+            openDropdown.style.display = "none";
+        }
     }
-  }
+});
