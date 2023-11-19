@@ -7,6 +7,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <!--oi-->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +16,8 @@
         <link rel="stylesheet" href="_css/Menu.css">
         <link rel="stylesheet" href="_css/footer.css"> 
         <link rel="stylesheet" href="_css/Login.css">
-        <link rel="stylesheet" href="_css/dropdownConta.css">
+        <link rel="stylesheet" href="_css/dropdownConta.css">`
     <!-- fim-css -->
-
         <!--Script-->    
             <!--Start of Tawk.to Script-->
             <script src="JS/chat.js"></script>
