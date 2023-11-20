@@ -1,4 +1,5 @@
-<?php 
+<?php
+    include_once('../../../controller/login/verificarSessao.php');
     include_once('../../../controller/crud/aluno/consultar.php');
 ?>
 <!DOCTYPE html>
@@ -11,7 +12,7 @@
     <link rel="stylesheet" href="../../_css/Menu.css">
     <link rel="stylesheet" href="../../_css/footer.css"> 
     <link rel="stylesheet" href="../../_css/Login.css">
-    <link rel="stylesheet" href="../../_css/aluno.css">
+    <link rel="stylesheet" href="../../_css/tabelasCrud.css">
     <!-- fim-css -->
     <link rel="shortcut icon" href="../../_img/logo.png" type="image/x-icon">
     <title>Exercicios</title> 
@@ -22,9 +23,16 @@
     <a href="Menu.html">
     <img src="../../_img/Logo-SemFundo.png" alt="foto" id="logo"/></a>
         <div class="link">
-            <li class="focus"><b><a href="../../Menu.html">Exercicios</a></b></li>
-            <li class="linke"><b><a href="../index.html">CRUD</a></b></li>
-            <li class="linke"><b><a href="../../controller/login/sair.php">Sair</a></b></li>         
+            <li class="focus"><b><a href="./">Exercício</a></b></li>
+            <li class="linke"><b><a href="../index.php">CRUD</a></b></li>
+            
+            <div class="dropdownConta">
+                <button class="btnConta" onclick="abrirDropdownConta()">Conta</button>
+                <div class="dropdown-conta-content" id="dropdownConta">
+                    <a href="configConta.php">Configurações</a>
+                    <a href="../controller/login/sair.php">Sair</a>
+                </div>
+            </div>
         </div>
 </header>
     <!-- fim do Menu -->
@@ -68,7 +76,7 @@
             </tbody>
         </table>
             </div><br><br>
-                <a href="../index.html" class="btv">Voltar</a>
+                <a href="../index.php" class="btv">Voltar</a>
                 <a href="cadastrar.php" class="bt">Cadastrar Novo Exercício</a>
         </div>
     </center>
@@ -130,5 +138,7 @@
         document.getElementById('year').innerHTML = new Date().getFullYear();
     </script>
     <!--  fim do footer -->
+
+    <script src="../../JS/dropdownConta.js"></script>
 </body>
 </html>

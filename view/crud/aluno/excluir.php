@@ -1,4 +1,5 @@
-<?php 
+<?php
+    include_once('../../../controller/login/verificarSessao.php');
 
     if (isset($_GET['id'])) {
         $id = $_GET['id'];

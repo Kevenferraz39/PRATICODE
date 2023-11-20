@@ -4,7 +4,7 @@
 
         $nome = $_POST['nome'];
         $email = $_POST['email'];
-        $senha =  $_POST['senha'];
+        $senhapass = password_hash(($senha =  $_POST['senha']), PASSWORD_DEFAULT);
         $senhaConf = $_POST['senhaConf'];
 
         if ($senha === $senhaConf) {
@@ -12,10 +12,10 @@
             $conectar = new Conexao();
             $conexao = $conectar->conectarBanco();
 
-            $sqlInsert = "INSERT INTO aluno(nome, email, senha) VALUES ('$nome', '$email', '$senha')";
+            $sqlInsert = "INSERT INTO aluno(nome, email, senha) VALUES ('$nome', '$email', '$senhapass')";
             $result = $conexao->query($sqlInsert);
 
-            header('Location: ../../view/menu.html');
+            header('Location: ../../view/menu.php');
         } else {
             echo "Senha incorreta";
         }

@@ -107,9 +107,7 @@ p{
     margin-bottom: 0;
 }
 
-footer{
-    top:330px;
-}
+
 @media (max-width: 414px) {
     h1{
         color: var(--font-color);

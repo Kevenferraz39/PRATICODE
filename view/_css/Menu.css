@@ -138,7 +138,8 @@ a:hover{
     font-weight:bold; /* isso deixa as letras em negrito*/ 
   }
   
-  .dropdown:hover .dropbtn, .dropbtn:focus {/*quando pasar o mouse sobre os itens vai alterar a formatacao original */
+  .dropdown:hover .dropbtn,
+  .dropbtn:focus {/*quando pasar o mouse sobre os itens vai alterar a formatacao original */
    color:var(--box-shadow-menu); /*definicao de cor do texto*/
   }
   
@@ -151,7 +152,7 @@ a:hover{
     z-index: 1; /*A propriedade Z-index especifica a ordem da pilha de um elemento do anúncio*/
   }
   
-  .dropdown-content a {
+  .dropdown-content a{
     float: none; /* define que o float sera none*/
     color: var(--font-color); /*definicao de cor do texto*/
     padding: 10px; /*isso define que o espaço interno tera 10px em todas as bordas*/
@@ -169,7 +170,6 @@ a:hover{
     display: block; /*podemos organizar os elementos lado a lado e definirmos as propriedades de largura e altura, pois elas não serão ignoradas pelo navegador*/
   }
 /*-----------------------------------------------------Fim da formatação do botao exercicios dropdown------------------------------------------------------------------------*/
-
 /*-----------------------------------------------------Fim da formatação do header-------------------------------------------------------------------------------------------*/
 
 

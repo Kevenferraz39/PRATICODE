@@ -10,20 +10,33 @@
         $conectar = new Conexao();
         $conexao = $conectar->conectarBanco();
 
-        $sql = "SELECT * FROM aluno WHERE email = '$email' AND senha = '$senha'";
+        $sql = "SELECT * FROM aluno WHERE email = '$email'";
         $result = mysqli_query($conexao, $sql);
+        $dados = mysqli_fetch_assoc($result);
+        $senhapass = $dados['senha'];
 
-        if (mysqli_num_rows($result) < 1) {
+        if (mysqli_num_rows($result) > 0) {
+            if (password_verify($senha, $senhapass)) {
+                $_SESSION['email'] = $email;
+                $_SESSION['senha'] = $senhapass;
+                $_SESSION['idAluno'] = $dados['idAluno'];
+
+                include_once('../../config/loginAdm.php');
+                if (($_SESSION['email'] == $emailAdm) && ($_SESSION['senha'] == $senhaAdm)) {
+                    header('Location: ../../view/crud/');
+                } else {
+                    header('Location: ../../view/');
+                }
+           } else {
+            header("Location: ../../view/");
+           }
+        } else {
             unset($_SESSION['email']);
             unset($_SESSION['senha']);
-            header('Location: ../../view/menu.html');
-        } else {
-            $_SESSION['email'] = $email;
-            $_SESSION['senha'] = $senha;
-            header('Location: ../../view/exercicios.php');
-       }
-
+            unset($_SESSION['idAluno']);
+            header('Location: ../../view/menu.php');
+        }
     } else {
-        header('Location: ../../view/menu.html');
+        header('Location: ../../view/menu.php');
     }
 ?>

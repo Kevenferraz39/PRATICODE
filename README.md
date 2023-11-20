@@ -1,16 +1,15 @@
+# TCC-praticode
+
+ # Esse site esta sendo desenvolvido para que os aulunos da ETC estudem e pratiquem HTML5 e CSS3 
+
+
 <h1 align="center">
- <img src="view/_img/Logo-SemFundo.png" width="100px;" alt="Logo"/>
-  <br>
-    Praticode
+ <img src="view/_img/Logo-SemFundo.png" width="80px;" alt="Logo"/><br>Praticode
 </h1>
 
-Esse site esta sendo desenvolvido para que os aulunos da ETC estudem e pratiquem HTML5 e CSS3
+![Resultado final do projeto](view/_img/site.png)
 
-![Resultado final do projeto](view/_img/Menu-Prati.png)
-
-<h4 align="center">
- <a href="https://praticode.com" id="btn">Clique para visitar o projeto</a>
-</h4>
+<h4 align="center"><a href="https://praticode.com">Clique para visitar o projeto</a></h4>
 
 ## 📚 Seções
 
@@ -72,7 +71,7 @@ Para desenvolvimento deste site utilizamos algumas plataformas que nos auxiliara
         </sub>
       </a>
     </td>
-     <td align="center">
+    <td align="center">
       <a href="https://github.com/.....">
           <img src="view/_img/julia.jpeg" width="100px;" alt="Foto do Julia"/><br>
         <sub>
@@ -80,7 +79,7 @@ Para desenvolvimento deste site utilizamos algumas plataformas que nos auxiliara
         </sub>
       </a>
     </td>
-     <td align="center">
+    <td align="center">
       <a href="https://github.com/HeitorBiazon">
           <img src="view/_img/heitor.jpeg" width="100px;" alt="Foto do Heitor"/><br>
         <sub>

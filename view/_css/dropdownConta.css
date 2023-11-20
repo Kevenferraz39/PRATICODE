@@ -1,0 +1,27 @@
+.dropdownConta {
+    position: relative;
+    display: inline-block;
+}
+
+.btnConta {
+    font-size: 16px;
+    padding: 5px;
+    background-color: #1d1f20;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.dropdown-conta-content {
+    display: none;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    top: 38px;
+    left: -45px;
+    background-color: #1d1f20;
+    height: 80px;
+    padding: 8px;
+}

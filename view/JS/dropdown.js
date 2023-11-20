@@ -1,5 +1,5 @@
 //Quando o usuário clicar no botão, alterne entre ocultar e mostrar o conteúdo do menu suspenso
-function myFunction() {
+function abrirDropdown() {
     document.getElementById("myDropdown").classList.toggle("show");
   }
   
