@@ -50,7 +50,7 @@
             } else {
                 header('Location: ../../view/menu.php');
             }
-       }
+        }
      else{
         header('Location: ../../view/menu.php');
      
