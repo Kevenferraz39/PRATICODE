@@ -14,15 +14,16 @@
     $resultado = mysqli_fetch_assoc($sql->getResultado());
 
     if ($resposta == $resultado['resposta']) {
-      echo "Parabéns! Resposta Correta.";
       $sql->consultarItem('pontos', 'aluno', 'idAluno', $idAluno);
       $resultado = mysqli_fetch_assoc($sql->getResultado());
       $pontos = $resultado['pontos'];
       $pontos += 10;
 
       $sql->atualizarBD('aluno', 'pontos', $pontos, 'idAluno', $idAluno);
+
+      header("Location: ../../view/respostaCorreta.php");
     } else {
-      echo "Poxa! Resposta Incorreta.";
+      header("Location: ../../view/respostaIncorreta.php");
     }
   }
 ?>

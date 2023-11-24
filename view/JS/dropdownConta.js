@@ -6,7 +6,7 @@ function abrirDropdownConta() {
       dropdownConta.style.display = "block";
     } else {
       dropdownConta.style.display = "none";
-  }
+    }
 }
   
   //Feche o menu suspenso se o usuário clicar fora dele
