@@ -22,14 +22,14 @@
                 $_SESSION['idAluno'] = $dados['idAluno'];
 
                 include_once('../../config/loginAdm.php');
-                if (($_SESSION['email'] == $emailAdm) && ($_SESSION['senha'] == $senhaAdm)) {
+                if (($_SESSION['email'] == $emailAdm)) {
                     header('Location: ../../view/crud/');
                 } else {
                     header('Location: ../../view/');
                 }
-           } else {
-            header("Location: ../../view/");
-           }
+            } else {
+                header("Location: ../../view/");
+            }
         } else {
             unset($_SESSION['email']);
             unset($_SESSION['senha']);
@@ -37,23 +37,18 @@
             header('Location: ../../view/menu.php');
         }
 
-        } else {
-            include_once('../../config/loginAdm.php');
-            $dados = mysqli_fetch_assoc($result);
+    // } else {
+    //     include_once('../../config/loginAdm.php');
+    //     $dados = mysqli_fetch_assoc($result);
 
-            $_SESSION['email'] = $email;
-            $_SESSION['senha'] = $senha;
-            $_SESSION['idAluno'] = $dados['idAluno'];
+    //     $_SESSION['email'] = $email;
+    //     $_SESSION['senha'] = $senha;
+    //     $_SESSION['idAluno'] = $dados['idAluno'];
 
-            if (($_SESSION['email'] == $emailAdm) && ($_SESSION['senha'] == $senhaAdm)) {
-                header('Location: ../../view/crud/');
-            } else {
-                header('Location: ../../view/menu.php');
-            }
-        }
-     else{
-        header('Location: ../../view/menu.php');
-     
+    //     if (($_SESSION['email'] == $emailAdm) && ($_SESSION['senha'] == $senhaAdm)) {
+    //         header('Location: ../../view/crud/');
+    //     } else {
+    //         header('Location: ../../view/menu.php');
+    //     }
     }
-
-?>
+?> 

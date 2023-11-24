@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    
+    if (!isset($_SESSION['email']) and !isset($_SESSION['senha'])) {
+        header('Location: ../../../menu.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -7,83 +14,124 @@
     <!-- css -->
     <link rel="stylesheet" href="../../../_css/Menu.css">
     <link rel="stylesheet" href="../../../_css/footer.css">
-    <link rel="stylesheet" href="../../../_css/perguntasCSS.css">
+    <link rel="stylesheet" href="../../../_css/perguntasHTML.css">
+    <link rel="stylesheet" href="../../../_css/dropdownConta.css">
+    <link rel="stylesheet" href="../../../_css/modalConta.css">
     <!-- fim-css -->
     <link rel="shortcut icon" href="../../../_img/logo.png" type="image/x-icon">
-    <title>Perguntas sobre cor</title> 
+    <title>Perguntas Sobre links</title> 
 </head>
 <body>
      <!-- Menu -->
 <header class="Home">
-    <a href="../../../Menu.html">
+    <a href="../../../menu.php">
     <img src="../../../_img/Logo-SemFundo.png" alt="foto" id="logo"/></a>
         <div class="link">
-            <li class="linke"><b><a href="../../../Menu.html">Home</a></b></li>
-            <li class="focus"><b><a href="#">CSS</a></b></li>
-            <li class="linke"><b><a href="../../../faleConosco.html">Fale conosco</a></b></li>
-            <li class="linke"><b><a href="../../../Desenvolvedores.html">Desenvolvedores</a></b></li>
+            <li class="linke"><b><a href="../../../menu.php">Home</a></b></li>
+            <li class="focus"><b><a href="#">HTML</a></b></li>
+            <li class="linke"><b><a href="../../../faleConosco.php">Fale conosco</a></b></li>
+            <li class="linke"><b><a href="../../../desenvolvedores.php">Desenvolvedores</a></b></li>
         <!-- Projetos botão dropdown -->
             <div class="dropdown">
-                <button class="dropbtn" onclick="myFunction()">Exercicios</button>
+                <button class="dropbtn" onclick="abrirDropdown()">Exercicios</button>
                 <div class="dropdown-content" id="myDropdown">
-                    <a href="../../../Exercicios.html"><b>Exercicios</b></a>
-                    <a href="../../../perguntasHTML.html"><b>HTML</b></a>
-                    <a href="../../../perguntasCSS.html"><b>CSS</b></a>
+                    <a href="../../../exercicios.php"><b>Exercicios</b></a>
+                    <a href="../../../perguntashtml.php"><b>HTML</b></a>
+                    <a href="../../../perguntascss.php"><b>CSS</b></a>
                 </div>
-            </div> 
+            </div>
+            <div class="dropdownConta">
+                <button class="btnConta" onclick="abrirDropdownConta()">Conta</button>
+                <div class="dropdown-conta-content" id="dropdownConta">
+                    <div class="btns">
+                        <a href="../controller/login/sair.php" class="btn-sair">Sair</a>
+                        <button class="btn-excluir" id="abrirModalbtn">Excluir conta</button>
+                    </div>
+                </div>
+            </div>
         <!-- final do botão dropdown -->
         </div>
-        <script>
-            /* Quando o usuário clicar no botão, alterne entre ocultar e mostrar o conteúdo do menu suspenso*/
-            function myFunction() {
-              document.getElementById("myDropdown").classList.toggle("show");
-            }
-            
-            //Feche o menu suspenso se o usuário clicar fora dele
-            window.onclick = function(e) {
-              if (!e.target.matches('.dropbtn')) {
-              var myDropdown = document.getElementById("myDropdown");
-                if (myDropdown.classList.contains('show')) {
-                  myDropdown.classList.remove('show');
-                }
-              }
-            }
-        </script>
 </header>
     <!-- fim do Menu -->
     <!-- conteudo da pagina -->
+    <div class="modal-conta" id="modal-conta">
+        <div class="modal-box">
+            <div class="conteudo" id="modal-conteudo">
+                <div class="texto-modal">
+                    <h2>Deseja mesmo excluir a sua conta?</h2>
+                    <p>Esta é uma ação irreversível e todos os seus dados e progresso serão perdidos.</p>
+                </div>
+                <div class="botoes">
+                    <button class="btn-can" id="fecharModalbtn">Cancelar</button>
+                    <a href="../controller/excluirConta.php" class="btn-exc" id="btnExc">Excluir</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <br><br><br><br><br>
 <div class="container">
    <div class="lista-perguntas">
     <div class="top">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
-            <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"></path><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path>
-            </svg><h3>------ CSS 3</h3>
+            <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
+            </svg><h3>Links HTML 5</h3>
     </div>
     <div class="inner-div">
         <ul>
-          <!-- Pergunta 1 -->            
-          <a href="p60.html"><li>
-            <b>1. Qual propriedade CSS é usada para alterar a cor de fundo de um elemento?</b>     
-         </li></a>
-          <!-- Pergunta 2 -->            
-          <a href="p61.html"><li>
-             <b>2. Qual propriedade CSS é usada para definir a cor do texto de um elemento?</b>
-         </li></a>
-           <!-- Pergunta 3 -->            
-           <a href="p63.html"><li>
-             <b>3. Como definir a cor do link não visitado em CSS?</b>
-         </li></a>
-           <!-- Pergunta 4 -->            
-           <a href="p64.html"><li>
-             <b>4. Como definir a cor da borda de um elemento em CSS?</b>
-         </li></a>
-         <!-- Adicione mais itens conforme necessário -->
+            <!-- Pergunta 1 -->            
+            <a href="p11.html">
+                <li>
+                    <b>1. Qual tag é usada para criar um link em HTML? </b>     
+                </li>
+            </a>
+             <!-- Pergunta 2 -->            
+             <a href="p12.html">
+                <li>
+                    <b>2. Qual atributo é usado para definir o endereço de destino de um link em HTML? </b>
+                </li>
+            </a>
+            <!-- Pergunta 3 -->                     
+              <a href="p16.html">
+                <li>
+                    <b>3. Como criar um link em HTML para redirecionar para uma página externa? </b>
+                </li>
+            </a>
+              <!-- Pergunta 4 -->            
+            <a href="p17.html">
+                <li>
+                    <b>4. Qual é a tag correta para adicionar um link de e-mail em HTML?</b>
+                </li>
+            </a>
+            <!-- Pergunta 5 -->            
+            <a href="p18.html">
+                <li>
+                    <b>5. Como remover a sublinhado padrão de um link em HTML? </b>
+                </li>
+            </a>
+            <!-- Pergunta 6 -->            
+            <a href="p21.html">
+                <li>
+                    <b>6. Qual é a função do atributo "rel" em uma tag de link (`&lt;a&gt;`)? </b>
+                </li>
+            </a>
+            <!-- Pergunta 7 -->            
+            <a href="p22.html">
+                <li>
+                    <b>7. Como criar um link que faça o download de um arquivo em HTML? </b>
+                </li>
+            </a>
+            <!-- Pergunta 8 -->            
+            <a href="p23.html">
+                <li>
+                    <b>8. Qual é a tag correta para definir a base URL para todos os links em uma página HTML? </b>
+                </li>
+            </a>
+            <!-- Adicione mais itens conforme necessário -->
         </ul>
     </div>
     <center>
         <div class="botoes">
-            <a href="../../../perguntasCSS.html" class="b-perguntas">Voltar</a>
+            <a href="../../../perguntashtml.php" class="b-perguntas">Voltar</a>
         </div><br>
     </center>
    </div>
@@ -198,5 +246,9 @@
         document.getElementById('year').innerHTML = new Date().getFullYear();
     </script>
     <!--  fim do footer -->
+
+    <script src="../../../JS/dropdown.js"></script>
+    <script src="../../../JS/dropdownConta.js"></script>
+    <script src="../../../JS/modalConta.js"></script>
 </body>
 </html>

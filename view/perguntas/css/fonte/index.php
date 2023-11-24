@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    
+    if (!isset($_SESSION['email']) and !isset($_SESSION['senha'])) {
+        header('Location: ../../../menu.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -10,10 +17,9 @@
     <link rel="stylesheet" href="../../../_css/perguntasCSS.css">
     <!-- fim-css -->
     <link rel="shortcut icon" href="../../../_img/logo.png" type="image/x-icon">
-    <title>Perguntas sobre ----</title> 
+    <title>Fonte CSS 3</title> 
 </head>
 <body>
-     <!-- Menu -->
      <!-- Menu -->
      <header class="Home">
         <a href="../../../Menu.html">
@@ -59,38 +65,48 @@
     <div class="top">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
             <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"></path><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path>
-            </svg><h3>Lista CSS 3</h3>
+            </svg><h3> Fonte CSS 3</h3>
     </div>
     <div class="inner-div">
         <ul>
-            <a href="p98.html">
-                <li>
-                    <b>1. Qual propriedade CSS é usada para definir o tipo de marcador em uma lista não ordenada?</b>     
-                </li>
-            </a>
-            <!-- Pergunta 2 -->            
-            <a href="p99.html">
-                <li>
-                    <b>2. Qual dos valores abaixo deve ser utilizado para remover os marcadores de uma lista não ordenada em CSS?</b>
-                </li>
-            </a>
-            <a href="p100.html">
-                <li>
-                    <b>3. Qual propriedade CSS é usada para definir o espaçamento entre os itens de uma lista?</b>
-                </li>
-            </a>
-            <a href="p101.html">
-                <li>
-                    <b>4. Qual alternativa define corretamente uma lista não ordenada com marcadores quadrados?</b>
-                </li>
-            </a>
-            
+            <!-- Pergunta 1 -->            
+            <a href="p65.html"><li>
+               <b>1. Qual propriedade CSS é usada para definir a fonte do texto em um elemento?</b>     
+            </li></a>
+             <!-- Pergunta 2 -->            
+             <a href="p66.html"><li>
+                <b>2. Qual propriedade CSS é usada para alterar o tamanho da fonte de um elemento? </b>
+            </li></a>
+            <!-- Pergunta 3 -->            
+            <a href="p67.html"><li>
+                <b>3. Qual propriedade CSS é usada para alinhar horizontalmente o texto dentro de um elemento? </b>
+            </li></a>
+            <!-- Pergunta 4 -->            
+              <a href="p68.html"><li>
+                <b>4. Qual propriedade CSS é usada para adicionar espaçamento entre as letras do texto?- </b>
+            </li></a>
+              <!-- Pergunta 5 -->            
+              <a href="p69.html"><li>
+                <b>5. Qual propriedade CSS é usada para alterar o estilo da fonte?</b>
+            </li></a>
+              <!-- Pergunta 6 -->            
+              <a href="p70.html"><li>
+                <b>6. Como definir o estilo da fonte em negrito em CSS?</b>
+            </li></a>
+              <!-- Pergunta 7 -->            
+              <a href="p71.html"><li>
+                <b>7. Qual propriedade CSS é usada para transformar o texto em maiúsculas?</b>
+            </li></a>
+              <!-- Pergunta 8 -->            
+              <a href="p72.html"><li>
+                <b>8. Qual é a propriedade CSS utilizada para adicionar sombras a texto?</b>
+            </li></a>
             <!-- Adicione mais itens conforme necessário -->
         </ul>
     </div>
     <center>
         <div class="botoes">
-            <a href="../../../perguntasCSS.html" class="b-perguntas">Voltar</a>
+            <a href="../../../perguntascss.php" class="b-perguntas">Voltar</a>
         </div><br>
     </center>
    </div>
@@ -124,16 +140,16 @@
                     <h3>EXERCICIOS DE HTML</h3>
                     <ul>
                         <li>
-                            <a href="../../../perguntas/html/tabela/index.html">Tabelas</a>
+                            <a href="../../../perguntas/html/tabela/index.php">Tabelas</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/html/link/index.html">Links</a>
+                            <a href="../../../perguntas/html/link/index.php">Links</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/html/imagem/index.html">Imagem</a>
+                            <a href="../../../perguntas/html/imagem/index.php">Imagem</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/html/lista/index.html">Lista</a>
+                            <a href="../../../perguntas/html/lista/index.php">Lista</a>
                         </li><li>
                             <a href="../../../perguntas/html/elementos">Elemento e atributos</a>
                         </li>
@@ -145,18 +161,18 @@
                     <h3>EXERCICIOS DE CSS</h3>
                     <ul>
                         <li>
-                            <a href="../../../perguntas/css/cor/index.html">Cor</a>
+                            <a href="../../../perguntas/css/cor/index.php">Cor</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/css/elementos/index.html">Elementos</a>
+                            <a href="../../../perguntas/css/elementos/index.php">Elementos</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/css/fonte/index.html">Fonte</a>
+                            <a href="../../../perguntas/css/fonte/index.php">Fonte</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/css/lista/index.html">Lista</a>
+                            <a href="../../../perguntas/css/lista/index.php">Lista</a>
                         </li><li>
-                            <a href="../../../perguntas/css/seletores/index.html">Seletores</a>
+                            <a href="../../../perguntas/css/seletores/index.php">Seletores</a>
                         </li>
                         <!-- More links -->
                     </ul>
