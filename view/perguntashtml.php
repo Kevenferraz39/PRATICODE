@@ -18,6 +18,8 @@
         <link rel="stylesheet" href="_css/Menu.css">
         <link rel="stylesheet" href="_css/footer.css">
         <link rel="stylesheet" href="_css/perguntasHTML.css">
+        <link rel="stylesheet" href="_css/dropdownConta.css">
+        <link rel="stylesheet" href="_css/modalConta.css">
     <!-- fim-css -->
 
         <!--script do dropdown-->
@@ -49,8 +51,10 @@
             <div class="dropdownConta">
                 <button class="btnConta" onclick="abrirDropdownConta()">Conta</button>
                 <div class="dropdown-conta-content" id="dropdownConta">
-                    <a href="configConta.php">Configurações</a>
-                    <a href="../controller/login/sair.php">Sair</a>
+                    <div class="btns">
+                        <a href="../controller/login/sair.php" class="btn-sair">Sair</a>
+                        <button class="btn-excluir" id="abrirModalbtn">Excluir conta</button>
+                    </div>
                 </div>
             </div>
         <!-- final do botão dropdown -->
@@ -58,6 +62,20 @@
 </header>
     <!-- fim do Menu -->
     <!-- conteudo da pagina -->
+    <div class="modal-conta" id="modal-conta">
+        <div class="modal-box">
+            <div class="conteudo" id="modal-conteudo">
+                <div class="texto-modal">
+                    <h2>Deseja mesmo excluir a sua conta?</h2>
+                    <p>Esta é uma ação irreversível e todos os seus dados e progresso serão perdidos.</p>
+                </div>
+                <div class="botoes-modal">
+                    <button class="btn-can" id="fecharModalbtn">Cancelar</button>
+                    <a href="../controller/excluirConta.php" class="btn-exc" id="btnExc">Excluir</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <br><br><br><br><br>
 <div class="container"> 
    <div class="lista-perguntas">
@@ -70,11 +88,11 @@
             <ul>
                 <!-- Pergunta 1 -->            
             <br><br><br><br>
-                <a href="perguntas/html/tabela/index.html"><li><b>Tabela</b></li></a>
-                <a href="perguntas/html/link/index.html"><li><b>Link´s</b></li></a>
-                <a href="perguntas/html/imagem/index.html"><li><b>Imagem</b></li></a>
-                <a href="perguntas/html/lista/index.html"><li><b>Lista</b></li></a>
-                <a href="perguntas/html/elementos/index.html"><li><b>Elementos e Atributos</b></li></a>
+                <a href="perguntas/html/tabela/index.php"><li><b>Tabela</b></li></a>
+                <a href="perguntas/html/link/index.php"><li><b>Link´s</b></li></a>
+                <a href="perguntas/html/imagem/index.php"><li><b>Imagem</b></li></a>
+                <a href="perguntas/html/lista/index.php"><li><b>Lista</b></li></a>
+                <a href="perguntas/html/elementos/index.php"><li><b>Elementos e Atributos</b></li></a>
                 <!-- Adicione mais itens conforme necessário -->
             </ul>
         </div>
@@ -114,16 +132,16 @@
                     <h3>EXERCICIOS DE HTML</h3>
                     <ul>
                         <li>
-                            <a href="perguntas/html/tabela/index.html">Tabelas</a>
+                            <a href="perguntas/html/tabela/index.php">Tabelas</a>
                         </li>
                         <li>
-                            <a href="perguntas/html/link/index.html">Links</a>
+                            <a href="perguntas/html/link/index.php">Links</a>
                         </li>
                         <li>
-                            <a href="perguntas/html/imagem/index.html">Imagem</a>
+                            <a href="perguntas/html/imagem/index.php">Imagem</a>
                         </li>
                         <li>
-                            <a href="perguntas/html/lista/index.html">Lista</a>
+                            <a href="perguntas/html/lista/index.php">Lista</a>
                         </li><li>
                             <a href="perguntas/html/elementos">Elemento e atributos</a>
                         </li>
@@ -135,18 +153,18 @@
                     <h3>EXERCICIOS DE CSS</h3>
                     <ul>
                         <li>
-                            <a href="perguntas/css/cor/index.html">Cor</a>
+                            <a href="perguntas/css/cor/index.php">Cor</a>
                         </li>
                         <li>
-                            <a href="perguntas/css/elementos/index.html">Elementos</a>
+                            <a href="perguntas/css/elementos/index.php">Elementos</a>
                         </li>
                         <li>
-                            <a href="perguntas/css/fonte/index.html">Fonte</a>
+                            <a href="perguntas/css/fonte/index.php">Fonte</a>
                         </li>
                         <li>
-                            <a href="perguntas/css/lista/index.html">Lista</a>
+                            <a href="perguntas/css/lista/index.php">Lista</a>
                         </li><li>
-                            <a href="perguntas/css/seletores/index.html">Seletores</a>
+                            <a href="perguntas/css/seletores/index.php">Seletores</a>
                         </li>
                         <!-- More links -->
                     </ul>
@@ -195,5 +213,7 @@
         document.getElementById('year').innerHTML = new Date().getFullYear();
     </script>
     <!--  fim do footer -->
+
+    <script src="./JS/modalConta.js"></script>
 </body>
 </html>

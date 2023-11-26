@@ -19,10 +19,8 @@
             $this->crud = "INSERT INTO $tabela($colunas) VALUES ($valores)";
             $this->resultado = mysqli_query($conexao, $this->crud);
 
-            if (mysqli_affected_rows($conexao) != 0 ) {
-                echo "Cadastro realizado com sucesso";
-            } else {
-                echo "Cadastro não foi realizado";
+            if (mysqli_affected_rows($conexao) == 0 ) {
+                echo "Erro no cadastro: " .$conexao->error;
             }
         }
 
@@ -65,10 +63,8 @@
             $this->crud = "UPDATE $tabela SET $coluna = $valor WHERE $colunaId = $idItem";
             $this->resultado = mysqli_query($conexao, $this->crud);
 
-            if (mysqli_affected_rows($conexao) != 0 ) {
-                echo "Item atualizado com sucesso";
-            } else {
-                echo "Item não atualizado com sucesso";
+            if (mysqli_affected_rows($conexao) == 0 ) {
+                echo "Erro: " .$conexao->error;
             }
         }
 

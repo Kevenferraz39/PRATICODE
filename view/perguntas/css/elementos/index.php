@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    
+    if (!isset($_SESSION['email']) and !isset($_SESSION['senha'])) {
+        header('Location: ../../../menu.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -120,7 +127,7 @@
     </div>
     <center>
         <div class="botoes">
-            <a href="../../../perguntasCSS.html" class="b-perguntas">Voltar</a>
+            <a href="../../../perguntascss.php" class="b-perguntas">Voltar</a>
         </div><br>
     </center>
    </div>
@@ -154,16 +161,16 @@
                     <h3>EXERCICIOS DE HTML</h3>
                     <ul>
                         <li>
-                            <a href="../../../perguntas/html/tabela/index.html">Tabelas</a>
+                            <a href="../../../perguntas/html/tabela/index.php">Tabelas</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/html/link/index.html">Links</a>
+                            <a href="../../../perguntas/html/link/index.php">Links</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/html/imagem/index.html">Imagem</a>
+                            <a href="../../../perguntas/html/imagem/index.php">Imagem</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/html/lista/index.html">Lista</a>
+                            <a href="../../../perguntas/html/lista/index.php">Lista</a>
                         </li><li>
                             <a href="../../../perguntas/html/elementos">Elemento e atributos</a>
                         </li>
@@ -175,18 +182,18 @@
                     <h3>EXERCICIOS DE CSS</h3>
                     <ul>
                         <li>
-                            <a href="../../../perguntas/css/cor/index.html">Cor</a>
+                            <a href="../../../perguntas/css/cor/index.php">Cor</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/css/elementos/index.html">Elementos</a>
+                            <a href="../../../perguntas/css/elementos/index.php">Elementos</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/css/fonte/index.html">Fonte</a>
+                            <a href="../../../perguntas/css/fonte/index.php">Fonte</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/css/lista/index.html">Lista</a>
+                            <a href="../../../perguntas/css/lista/index.php">Lista</a>
                         </li><li>
-                            <a href="../../../perguntas/css/seletores/index.html">Seletores</a>
+                            <a href="../../../perguntas/css/seletores/index.php">Seletores</a>
                         </li>
                         <!-- More links -->
                     </ul>

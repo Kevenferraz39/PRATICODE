@@ -1,3 +1,10 @@
+<?php 
+    session_start();
+    
+    if (!isset($_SESSION['email']) and !isset($_SESSION['senha'])) {
+        header('Location: ../../../menu.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -8,9 +15,11 @@
     <link rel="stylesheet" href="../../../_css/Menu.css">
     <link rel="stylesheet" href="../../../_css/footer.css">
     <link rel="stylesheet" href="../../../_css/perguntasHTML.css">
+    <link rel="stylesheet" href="../../../_css/dropdownConta.css">
+    <link rel="stylesheet" href="../../../_css/modalConta.css">
     <!-- fim-css -->
     <link rel="shortcut icon" href="../../../_img/logo.png" type="image/x-icon">
-    <title>Perguntas Sobre links</title> 
+    <title>Perguntas Imagens</title> 
 </head>
 <body>
      <!-- Menu -->
@@ -34,8 +43,10 @@
             <div class="dropdownConta">
                 <button class="btnConta" onclick="abrirDropdownConta()">Conta</button>
                 <div class="dropdown-conta-content" id="dropdownConta">
-                    <a href="../../../configConta.php">Configurações</a>
-                    <a href="../../../../controller/login/sair.php">Sair</a>
+                    <div class="btns">
+                        <a href="../controller/login/sair.php" class="btn-sair">Sair</a>
+                        <button class="btn-excluir" id="abrirModalbtn">Excluir conta</button>
+                    </div>
                 </div>
             </div>
         <!-- final do botão dropdown -->
@@ -43,66 +54,68 @@
 </header>
     <!-- fim do Menu -->
     <!-- conteudo da pagina -->
+    <div class="modal-conta" id="modal-conta">
+        <div class="modal-box">
+            <div class="conteudo" id="modal-conteudo">
+                <div class="texto-modal">
+                    <h2>Deseja mesmo excluir a sua conta?</h2>
+                    <p>Esta é uma ação irreversível e todos os seus dados e progresso serão perdidos.</p>
+                </div>
+                <div class="botoes">
+                    <button class="btn-can" id="fecharModalbtn">Cancelar</button>
+                    <a href="../controller/excluirConta.php" class="btn-exc" id="btnExc">Excluir</a>
+                </div>
+            </div>
+        </div>
+    </div>
     <br><br><br><br><br>
 <div class="container">
    <div class="lista-perguntas">
     <div class="top">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
             <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#FF6D00" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M24,25v-4h8.6l-0.7,11.5L24,35.1v-4.2l4.1-1.4l0.3-4.5H24z M32.9,17l0.3-4H24v4H32.9z"></path><path fill="#EEE" d="M24,30.9v4.2l-7.9-2.6L15.7,27h4l0.2,2.5L24,30.9z M19.1,17H24v-4h-9.1l0.7,12H24v-4h-4.6L19.1,17z"></path>
-            </svg><h3>Links HTML 5</h3>
+            </svg><h3>Imagens HTML 5</h3>
     </div>
     <div class="inner-div">
-        <ul>
-            <!-- Pergunta 1 -->            
-            <a href="p11.html">
-                <li>
-                    <b>1. Qual tag é usada para criar um link em HTML? </b>     
-                </li>
-            </a>
-             <!-- Pergunta 2 -->            
-             <a href="p12.html">
-                <li>
-                    <b>2. Qual atributo é usado para definir o endereço de destino de um link em HTML? </b>
-                </li>
-            </a>
-            <!-- Pergunta 3 -->                     
-              <a href="p16.html">
-                <li>
-                    <b>3. Como criar um link em HTML para redirecionar para uma página externa? </b>
-                </li>
-            </a>
-              <!-- Pergunta 4 -->            
-            <a href="p17.html">
-                <li>
-                    <b>4. Qual é a tag correta para adicionar um link de e-mail em HTML?</b>
-                </li>
-            </a>
-            <!-- Pergunta 5 -->            
-            <a href="p18.html">
-                <li>
-                    <b>5. Como remover a sublinhado padrão de um link em HTML? </b>
-                </li>
-            </a>
-            <!-- Pergunta 6 -->            
-            <a href="p21.html">
-                <li>
-                    <b>6. Qual é a função do atributo "rel" em uma tag de link (`&lt;a&gt;`)? </b>
-                </li>
-            </a>
-            <!-- Pergunta 7 -->            
-            <a href="p22.html">
-                <li>
-                    <b>7. Como criar um link que faça o download de um arquivo em HTML? </b>
-                </li>
-            </a>
-            <!-- Pergunta 8 -->            
-            <a href="p23.html">
-                <li>
-                    <b>8. Qual é a tag correta para definir a base URL para todos os links em uma página HTML? </b>
-                </li>
-            </a>
-            <!-- Adicione mais itens conforme necessário -->
-        </ul>
+            <ul>
+                <!-- Pergunta 1 -->            
+                <a href="p24.html"><li>
+                   <b>1. Qual tag é usada para adicionar uma imagem em uma página HTML? </b>     
+                </li></a>
+                 <!-- Pergunta 2 -->            
+                 <a href="p25.html"><li>
+                    <b>2. Qual atributo é usado para especificar o texto alternativo de uma imagem em HTML? </b>
+                </li></a>
+                <!-- Pergunta 3 -->            
+                <a href="p26.html"><li>
+                    <b>3. Qual é a maneira correta de inserir uma imagem em uma página HTML?</b>
+                </li></a>
+                  <!-- Pergunta 4 -->            
+                  <a href="p28.html"><li>
+                    <b>4. Qual a opção que define a largura de uma imagem em HTML?</b>
+                </li></a>
+                  <!-- Pergunta 5 -->            
+                  <a href="p29.html"><li>
+                    <b>5. O que o atributo "title" faz em uma tag de imagem em HTML? </b>
+                </li></a>
+                  <!-- Pergunta 6 -->            
+                  <a href="p30.html"><li>
+                    <b>6. Como carregar uma imagem localmente em vez de buscar na web em HTML?</b>
+                </li></a>
+                  <!-- Pergunta 7 -->            
+                  <a href="p31.html"><li>
+                    <b>7. Qual atributo é usado para adicionar uma borda a uma imagem em HTML? </b>
+                </li></a>
+                  <!-- Pergunta 8 -->            
+                  <a href="p33.html"><li>
+                    <b>8. Qual é a função do atributo "srcset" em uma tag de imagem?</b>
+                </li></a>
+                <!-- Pergunta 9 -->            
+                  <a href="p34.html"><li>
+                    <b>9. Como adicionar uma imagem como plano de fundo de uma página HTML?</b>
+                </li></a>  
+                <!-- Adicione mais itens conforme necessário -->
+            </ul>
     </div>
     <center>
         <div class="botoes">
@@ -224,5 +237,6 @@
 
     <script src="../../../JS/dropdown.js"></script>
     <script src="../../../JS/dropdownConta.js"></script>
+    <script src="../../../JS/modalConta.js"></script>
 </body>
 </html>
