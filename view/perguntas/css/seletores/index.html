@@ -1,10 +1,3 @@
-<?php 
-    session_start();
-    
-    if (!isset($_SESSION['email']) and !isset($_SESSION['senha'])) {
-        header('Location: ../../../menu.php');
-    }
-?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -17,10 +10,9 @@
     <link rel="stylesheet" href="../../../_css/perguntasCSS.css">
     <!-- fim-css -->
     <link rel="shortcut icon" href="../../../_img/logo.png" type="image/x-icon">
-    <title>Perguntas sobre ----</title> 
+    <title>Perguntas sobre seletores</title> 
 </head>
 <body>
-     <!-- Menu -->
      <!-- Menu -->
      <header class="Home">
         <a href="../../../Menu.html">
@@ -66,38 +58,60 @@
     <div class="top">
         <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="48" height="48" viewBox="0 0 48 48">
             <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path><path fill="#039BE5" d="M24 8L24 39.9 35.2 36.7 37.7 8z"></path><path fill="#FFF" d="M33.1 13L24 13 24 17 28.9 17 28.6 21 24 21 24 25 28.4 25 28.1 29.5 24 30.9 24 35.1 31.9 32.5 32.6 21 32.6 21z"></path><path fill="#EEE" d="M24,13v4h-8.9l-0.3-4H24z M19.4,21l0.2,4H24v-4H19.4z M19.8,27h-4l0.3,5.5l7.9,2.6v-4.2l-4.1-1.4L19.8,27z"></path>
-            </svg><h3>Lista CSS 3</h3>
+            </svg><h3> Seletores CSS 3</h3>
     </div>
     <div class="inner-div">
         <ul>
-            <a href="p98.html">
-                <li>
-                    <b>1. Qual propriedade CSS é usada para definir o tipo de marcador em uma lista não ordenada?</b>     
-                </li>
-            </a>
-            <!-- Pergunta 2 -->            
-            <a href="p99.html">
-                <li>
-                    <b>2. Qual dos valores abaixo deve ser utilizado para remover os marcadores de uma lista não ordenada em CSS?</b>
-                </li>
-            </a>
-            <a href="p100.html">
-                <li>
-                    <b>3. Qual propriedade CSS é usada para definir o espaçamento entre os itens de uma lista?</b>
-                </li>
-            </a>
-            <a href="p101.html">
-                <li>
-                    <b>4. Qual alternativa define corretamente uma lista não ordenada com marcadores quadrados?</b>
-                </li>
-            </a>
-            
+            <!-- Pergunta 1 -->            
+            <a href="p73.html"><li>
+               <b>1. Para que serve os Seletores na linguagem CSS?</b>     
+            </li></a>
+             <!-- Pergunta 2 -->            
+             <a href="p74.html"><li>
+                <b>2. Qual seletor CSS é usado para selecionar todos os elementos? Também conhecido como seletor universal? </b>
+            </li></a>
+            <!-- Pergunta 3 -->            
+            <a href="p75.html"><li>
+                <b>3. Qual seletor CSS é usado para selecionar um elemento pela sua classe? </b>
+            </li></a>
+            <!-- Pergunta 4 -->            
+              <a href="p76.html"><li>
+                <b>4. Qual seletor CSS é usado para selecionar um elemento pelo seu ID?</b>
+            </li></a>
+              <!-- Pergunta 5 -->            
+              <a href="p77.html"><li>
+                <b>5. Como selecionar todos os elementos &lt;p&gt; dentro de uma &lt;div&gt; em CSS? </b>
+            </li></a>
+              <!-- Pergunta 7 -->            
+              <a href="p78.html"><li>
+                <b>6. Como selecionar todos os elementos com a classe "destaque" em CSS?</b>
+            </li></a>
+              <!-- Pergunta 8 -->            
+              <a href="p79.html"><li>
+                <b>7. Como selecionar o último elemento de uma lista não ordenada em CSS?</b>
+            </li></a>
+              <!-- Pergunta 9 -->            
+              <a href="p80.html"><li>
+                <b>8. Qual é o seletor que escolhe os elementos que contêm um determinado texto em CSS?</b>
+            </li></a>
+              <!-- Pergunta 10 -->            
+              <a href="p81.html"><li>
+                <b>9. Como selecionar todos os links não visitados em CSS? </b>
+            </li></a>
+              <!-- Pergunta 11 -->            
+              <a href="p82.html"><li>
+                <b>10. Qual é o seletor que escolhe os elementos que são os primeiros filhos de seu elemento pai?</b>
+            </li></a>
+              <!-- Pergunta 12 -->            
+              <a href="p83.html"><li>
+                <b>11. Como selecionar os elementos que estão sendo "hovered" (com o mouse sobre eles) em CSS? </b>
+            </li></a>
             <!-- Adicione mais itens conforme necessário -->
         </ul>
     </div>
     <center>
         <div class="botoes">
-            <a href="../../../perguntascss.php" class="b-perguntas">Voltar</a>
+            <a href="../../../perguntasCSS.html" class="b-perguntas">Voltar</a>
         </div><br>
     </center>
    </div>
@@ -152,18 +166,18 @@
                     <h3>EXERCICIOS DE CSS</h3>
                     <ul>
                         <li>
-                            <a href="../../../perguntas/css/cor/index.php">Cor</a>
+                            <a href="../../../perguntas/css/cor/index.html">Cor</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/css/elementos/index.php">Elementos</a>
+                            <a href="../../../perguntas/css/elementos/index.html">Elementos</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/css/fonte/index.php">Fonte</a>
+                            <a href="../../../perguntas/css/fonte/index.html">Fonte</a>
                         </li>
                         <li>
-                            <a href="../../../perguntas/css/lista/index.php">Lista</a>
+                            <a href="../../../perguntas/css/lista/index.html">Lista</a>
                         </li><li>
-                            <a href="../../../perguntas/css/seletores/index.php">Seletores</a>
+                            <a href="../../../perguntas/css/seletores/index.html">Seletores</a>
                         </li>
                         <!-- More links -->
                     </ul>

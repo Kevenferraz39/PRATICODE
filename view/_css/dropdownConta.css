@@ -16,49 +16,12 @@
 .dropdown-conta-content {
     display: none;
     position: absolute;
+    padding: 0;
     margin: 0;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     top: 38px;
-    left: -175px;
+    left: -45px;
     background-color: #1d1f20;
-    height: 65px;
-    width: 250px;
-    padding: 12px;
-}
-
-.btns {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.btn-sair {
-    font-weight: bold;
-    background-color: rgb(255, 255, 255);
-    color: rgb(29, 31, 32);
-    padding: 8px 18px;
-    border-radius: 25px;
-}
-
-.btn-sair:hover {
-    background-color: rgba(255, 255, 255, 0.900);
-    color: rgb(29, 31, 32, 0.900);
-}
-
-.btn-excluir {
-    color: #fff;
-    background-color: rgb(170, 17, 17);
-    padding: 8px 3px;
-    width: 65%;
-    border-radius: 25px;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.btn-excluir:hover {
-    color: rgb(255, 255, 255, 0.900);
-    background-color: rgb(170, 17, 17, 0.900);
-    cursor: pointer;
-    text-decoration: none;
+    height: 80px;
+    padding: 8px;
 }

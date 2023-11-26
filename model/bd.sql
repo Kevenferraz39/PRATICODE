@@ -5,13 +5,13 @@ CREATE TABLE `aluno` (
   `idAluno` int(11) NOT NULL,
   `nome` varchar(100) NOT NULL,
   `email` varchar(30) NOT NULL,
-  `senha` char(60) NOT NULL,
+  `senha` varchar(32) NOT NULL,
   `pontos` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
--- INSERT INTO `aluno` (`idAluno`, `nome`, `email`, `senha`, `pontos`) VALUES
--- (1, 'Praticode', 'codeprati@gmail.com', 'Praticode@2023', 0);
+INSERT INTO `aluno` (`idAluno`, `nome`, `email`, `senha`, `pontos`) VALUES
+(1, 'Praticode', 'codeprati@gmail.com', 'Praticode@2023', 0);
 
 
 CREATE TABLE `exercicio` (
@@ -170,9 +170,9 @@ ALTER TABLE `resposta`
 
 
 ALTER TABLE `exercicio`
-  ADD CONSTRAINT `fk_idLista` FOREIGN KEY (`idLista`) REFERENCES `lista` (`idLista`) ON DELETE CASCADE;
+  ADD CONSTRAINT `fk_idLista` FOREIGN KEY (`idLista`) REFERENCES `lista` (`idLista`);
 
 
 ALTER TABLE `resposta`
-  ADD CONSTRAINT `fk_idAluno` FOREIGN KEY (`idAluno`) REFERENCES `aluno` (`idAluno`) ON DELETE CASCADE,
-  ADD CONSTRAINT `fk_idExercicio` FOREIGN KEY (`idExercicio`) REFERENCES `exercicio` (`idExercicio`) ON DELETE CASCADE;
+  ADD CONSTRAINT `fk_idAluno` FOREIGN KEY (`idAluno`) REFERENCES `aluno` (`idAluno`),
+  ADD CONSTRAINT `fk_idExercicio` FOREIGN KEY (`idExercicio`) REFERENCES `exercicio` (`idExercicio`);

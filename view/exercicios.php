@@ -19,8 +19,6 @@
         <link rel="stylesheet" href="_css/footer.css">
         <link rel="stylesheet" href="_css/exercicios.css">
         <link rel="stylesheet" href="_css/Login.css">
-        <link rel="stylesheet" href="_css/dropdownConta.css">
-        <link rel="stylesheet" href="_css/modalConta.css">
     <!-- fim-css -->
 
         <!--Script-->
@@ -52,19 +50,11 @@
                     <a href="perguntascss.php"><b>CSS</b></a>
                 </div>
             </div>
-            <?php 
-                include_once('../config/loginAdm.php');
-                if (($_SESSION['email'] == $emailAdm)) {
-            ?>
-            <li class="linke"><b><a href="./crud/">CRUD</a></b></li>
-            <?php } ?>
             <div class="dropdownConta">
                 <button class="btnConta" onclick="abrirDropdownConta()">Conta</button>
                 <div class="dropdown-conta-content" id="dropdownConta">
-                    <div class="btns">
-                        <a href="../controller/login/sair.php" class="btn-sair">Sair</a>
-                        <button class="btn-excluir" id="abrirModalbtn">Excluir conta</button>
-                    </div>
+                    <a href="configConta.php">Configurações</a>
+                    <a href="../controller/login/sair.php">Sair</a>
                 </div>
             </div>
             <!-- final do botão dropdown -->
@@ -94,20 +84,6 @@
 </header>
     <!-- fim do Menu -->
     <!-- conteudo da pagina -->
-    <div class="modal-conta" id="modal-conta">
-        <div class="modal-box">
-            <div class="conteudo" id="modal-conteudo">
-                <div class="texto-modal">
-                    <h2>Deseja mesmo excluir a sua conta?</h2>
-                    <p>Esta é uma ação irreversível e todos os seus dados e progresso serão perdidos.</p>
-                </div>
-                <div class="botoes-modal">
-                    <button class="btn-can" id="fecharModalbtn">Cancelar</button>
-                    <a href="../controller/excluirConta.php" class="btn-exc" id="btnExc">Excluir</a>
-                </div>
-            </div>
-        </div>
-    </div>
     <br><br><br><br><br><br>
 <center>
     <div class="content">
@@ -153,16 +129,16 @@
                     <h3>EXERCICIOS DE HTML</h3>
                     <ul>
                         <li>
-                            <a href="perguntas/html/tabela/index.php">Tabelas</a>
+                            <a href="perguntas/html/tabela/index.html">Tabelas</a>
                         </li>
                         <li>
-                            <a href="perguntas/html/link/index.php">Links</a>
+                            <a href="perguntas/html/link/index.html">Links</a>
                         </li>
                         <li>
-                            <a href="perguntas/html/imagem/index.php">Imagem</a>
+                            <a href="perguntas/html/imagem/index.html">Imagem</a>
                         </li>
                         <li>
-                            <a href="perguntas/html/lista/index.php">Lista</a>
+                            <a href="perguntas/html/lista/index.html">Lista</a>
                         </li><li>
                             <a href="perguntas/html/elementos">Elemento e atributos</a>
                         </li>
@@ -174,18 +150,18 @@
                     <h3>EXERCICIOS DE CSS</h3>
                     <ul>
                         <li>
-                            <a href="perguntas/css/cor/index.php">Cor</a>
+                            <a href="perguntas/css/cor/index.html">Cor</a>
                         </li>
                         <li>
-                            <a href="perguntas/css/elementos/index.php">Elementos</a>
+                            <a href="perguntas/css/elementos/index.html">Elementos</a>
                         </li>
                         <li>
-                            <a href="perguntas/css/fonte/index.php">Fonte</a>
+                            <a href="perguntas/css/fonte/index.html">Fonte</a>
                         </li>
                         <li>
-                            <a href="perguntas/css/lista/index.php">Lista</a>
+                            <a href="perguntas/css/lista/index.html">Lista</a>
                         </li><li>
-                            <a href="perguntas/css/seletores/index.php">Seletores</a>
+                            <a href="perguntas/css/seletores/index.html">Seletores</a>
                         </li>
                         <!-- More links -->
                     </ul>
@@ -234,7 +210,5 @@
         document.getElementById('year').innerHTML = new Date().getFullYear();
     </script>
     <!--  fim do footer -->
-
-    <script src="./JS/modalConta.js"></script>
 </body>
 </html>

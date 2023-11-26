@@ -14,8 +14,6 @@
         <link rel="stylesheet" href="_css/footer.css">
         <link rel="stylesheet" href="_css/desnvolvedores.css">
         <link rel="stylesheet" href="_css/Login.css">
-        <link rel="stylesheet" href="_css/dropdownConta.css">
-        <link rel="stylesheet" href="_css/modalConta.css">
     <!-- fim-css -->
 
         <!--Script-->    
@@ -37,11 +35,6 @@
             <li class="linke"><b><a href="menu.php">Home</a></b></li>
             <li class="linke"><b><a href="faleConosco.php">Fale conosco</a></b></li>
             <li class="focus"><b><a href="desenvolvedores.php">Desenvolvedores</a></b></li>
-            <?php
-                if (!isset($_SESSION['email']) && !isset($_SESSION['senha'])) {
-                    echo "<button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">Login</button>";
-                } else {
-            ?>
             <!-- Projetos botão dropdown -->
             <div class="dropdown">
                 <button class="dropbtn" onclick="abrirDropdown()">Exercicios</button>
@@ -52,19 +45,16 @@
                 </div>
             </div> 
             <!-- final do botão dropdown -->
-            <?php 
-                include_once('../config/loginAdm.php');
-                if (($_SESSION['email'] == $emailAdm)) {
+            <?php
+                if (!isset($_SESSION['email']) && !isset($_SESSION['senha'])) {
+                    echo "<button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">Login</button>";
+                } else {
             ?>
-            <li class="linke"><b><a href="./crud/">CRUD</a></b></li>
-            <?php } ?>
             <div class="dropdownConta">
                 <button class="btnConta" onclick="abrirDropdownConta()">Conta</button>
                 <div class="dropdown-conta-content" id="dropdownConta">
-                    <div class="btns">
-                        <a href="../controller/login/sair.php" class="btn-sair">Sair</a>
-                        <button class="btn-excluir" id="abrirModalbtn">Excluir conta</button>
-                    </div>
+                    <a href="configConta.php">Configurações</a>
+                    <a href="../controller/login/sair.php">Sair</a>
                 </div>
             </div>
             <?php } ?>
@@ -87,7 +77,7 @@
 
                     <div class="container" style="background-color:#fdfdfd00">
                         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-                        <!-- <span class="psw"><a href="#">Esqueceu a sua senha ?</a></span> -->
+                        <span class="psw"><a href="#">Esqueceu a sua senha ?</a></span>
                     </div>
                 </form>
             </div>
@@ -95,20 +85,6 @@
 </header>
     <!-- fim do Menu -->
     <!-- conteudo da pagina -->
-    <div class="modal-conta" id="modal-conta">
-        <div class="modal-box">
-            <div class="conteudo" id="modal-conteudo">
-                <div class="texto-modal">
-                    <h2>Deseja mesmo excluir a sua conta?</h2>
-                    <p>Esta é uma ação irreversível e todos os seus dados e progresso serão perdidos.</p>
-                </div>
-                <div class="botoes-modal">
-                    <button class="btn-can" id="fecharModalbtn">Cancelar</button>
-                    <a href="../controller/excluirConta.php" class="btn-exc" id="btnExc">Excluir</a>
-                </div>
-            </div>
-        </div>
-    </div>
     <br><br><br><br><br>
      <h1>Desenvolvedores</h1><br>
      <p>Esse site foi criado a partir de um projeto de TCC da Escola Estadual Técnica Centro Paula Souza.</p>
@@ -178,8 +154,13 @@
             </div>
      </div>
      </center>
-     
+    <!--  fim do conteudo da pagina -->
+    <!--  footer -->
+    
+    <script>
+        document.getElementById('year').innerHTML = new Date().getFullYear();
+    </script>
+    <!--  fim do footer -->
     <script src="./JS/dropdownConta.js"></script>
-    <script src="./JS/modalConta.js"></script>
 </body>
 </html>

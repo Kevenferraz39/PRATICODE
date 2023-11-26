@@ -12,9 +12,7 @@
         <link rel="stylesheet" href="_css/Menu.css">
         <link rel="stylesheet" href="_css/footer.css">
         <link rel="stylesheet" href="_css/faleConosco.css">
-        <link rel="stylesheet" href="_css/Login.css">
-        <link rel="stylesheet" href="_css/dropdownConta.css">
-        <link rel="stylesheet" href="_css/modalConta.css">
+        <link rel="stylesheet" href="_css/Login.css">   
     <!-- fim-css -->
 
         <!--Script-->    
@@ -38,11 +36,6 @@
             <li class="linke"><b><a href="menu.php">Home</a></b></li>
             <li class="focus"><b><a href="faleConosco.php">Fale conosco</a></b></li>
             <li class="linke"><b><a href="desenvolvedores.php">Desenvolvedores</a></b></li>
-            <?php
-                if (!isset($_SESSION['email']) && !isset($_SESSION['senha'])) {
-                    echo "<button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">Login</button>";
-                } else {
-            ?>
             <!-- Projetos botão dropdown -->
             <div class="dropdown">
                 <button class="dropbtn" onclick="abrirDropdown()">Exercicios</button>
@@ -52,19 +45,16 @@
                     <a href="perguntascss.php"><b>CSS</b></a>
                 </div>
             </div> 
-            <?php 
-                include_once('../config/loginAdm.php');
-                if (($_SESSION['email'] == $emailAdm)) {
+            <?php
+                if (!isset($_SESSION['email']) && !isset($_SESSION['senha'])) {
+                    echo "<button onclick=\"document.getElementById('id01').style.display='block'\" style=\"width:auto;\">Login</button>";
+                } else {
             ?>
-            <li class="linke"><b><a href="./crud/">CRUD</a></b></li>
-            <?php } ?>
             <div class="dropdownConta">
                 <button class="btnConta" onclick="abrirDropdownConta()">Conta</button>
                 <div class="dropdown-conta-content" id="dropdownConta">
-                    <div class="btns">
-                        <a href="../controller/login/sair.php" class="btn-sair">Sair</a>
-                        <button class="btn-excluir" id="abrirModalbtn">Excluir conta</button>
-                    </div>
+                    <a href="configConta.php">Configurações</a>
+                    <a href="../controller/login/sair.php">Sair</a>
                 </div>
             </div>
             <?php } ?>  
@@ -86,7 +76,7 @@
 
                     <div class="container" style="background-color:#fdfdfd00">
                     <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancelar</button>
-                    <!-- <span class="psw"><a href="#">Esqueceu a sua senha ?</a></span> -->
+                    <span class="psw"><a href="#">Esqueceu a sua senha ?</a></span>
                     </div>
                 </form>
             </div>
@@ -95,20 +85,6 @@
     <!-- fim do Menu -->
 
     <!-- conteudo da pagina -->
-    <div class="modal-conta" id="modal-conta">
-        <div class="modal-box">
-            <div class="conteudo" id="modal-conteudo">
-                <div class="texto-modal">
-                    <h2>Deseja mesmo excluir a sua conta?</h2>
-                    <p>Esta é uma ação irreversível e todos os seus dados e progresso serão perdidos.</p>
-                </div>
-                <div class="botoes-modal">
-                    <button class="btn-can" id="fecharModalbtn">Cancelar</button>
-                    <a href="../controller/excluirConta.php" class="btn-exc" id="btnExc">Excluir</a>
-                </div>
-            </div>
-        </div>
-    </div>
     <br><br><br><br><br>
      <h1>Fale Conosco</h1><br>
      <p>Em caso de dúvidas, reclamações ou sujestões, entre em contato conosco através de nossas redes sociais.</p>
@@ -138,6 +114,5 @@
     <!--  fim do footer -->
 
     <script src="./JS/dropdownConta.js"></script>
-    <script src="./JS/modalConta.js"></script>
 </body>
 </html>

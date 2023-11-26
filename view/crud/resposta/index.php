@@ -25,6 +25,14 @@
         <div class="link">
             <li class="focus"><b><a href="./">Respostas</a></b></li>
             <li class="linke"><b><a href="../index.php">CRUD</a></b></li>
+            
+            <div class="dropdownConta">
+                <button class="btnConta" onclick="abrirDropdownConta()">Conta</button>
+                <div class="dropdown-conta-content" id="dropdownConta">
+                    <a href="configConta.php">Configurações</a>
+                    <a href="../controller/login/sair.php">Sair</a>
+                </div>
+            </div>
         </div>
 </header>
     <!-- fim do Menu -->
